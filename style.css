@@ -344,7 +344,20 @@
 }
 
 /* PRO & Visa overview banner */
-.pro-banner-section{padding:34px 0 12px;background:var(--white)}
+.pro-banner-section{padding:34px 0 30px;background:var(--white)}
 .pro-banner-section .wrap{width:min(1160px,90%);max-width:1160px;margin-left:auto;margin-right:auto;box-sizing:border-box}
-.pro-services-banner{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:initial;object-position:center;margin:0 auto;border:1px solid var(--silver);border-radius:4px;box-sizing:border-box}
-@media(max-width:760px){.pro-banner-section{padding:22px 0 6px}.pro-services-banner{max-height:none;border-radius:3px}}
+.pro-banner-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.85fr);align-items:stretch;gap:28px}
+.pro-banner-image-wrap{min-width:0;display:flex;align-items:center}
+.pro-services-banner{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;margin:0;border:1px solid var(--silver);border-radius:4px;box-sizing:border-box}
+.pro-banner-copy{background:var(--royal);color:#fff;padding:38px 32px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.pro-banner-copy .kicker{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.13em}
+.pro-banner-copy h2{font:800 clamp(25px,2.5vw,34px)/1.2 'Manrope',sans-serif;letter-spacing:-.035em;margin:14px 0 15px;color:#fff}
+.pro-banner-copy h2 em{font:400 1em/1.2 Georgia,serif;color:var(--gold)}
+.pro-banner-copy p{font-size:14px;line-height:1.75;color:#e5edf5;margin:0 0 16px}
+.pro-banner-copy ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+.pro-banner-copy li{position:relative;padding-left:19px;font-size:13px;line-height:1.5;color:#fff}
+.pro-banner-copy li:before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.pro-banner-link{align-self:flex-start;color:var(--gold);font-size:13px;font-weight:700;border-bottom:1px solid rgba(217,173,85,.65);padding-bottom:4px}
+.pro-banner-copy small{font-size:10px;line-height:1.6;color:#c9d7e5;margin-top:18px}
+@media(max-width:900px){.pro-banner-layout{grid-template-columns:minmax(0,1.35fr) minmax(250px,.9fr);gap:18px}.pro-banner-copy{padding:28px 23px}}
+@media(max-width:760px){.pro-banner-section{padding:22px 0 20px}.pro-banner-layout{grid-template-columns:1fr;gap:14px}.pro-banner-copy{padding:27px 23px}.pro-services-banner{max-height:none;border-radius:3px}}
