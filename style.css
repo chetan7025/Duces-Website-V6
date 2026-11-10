@@ -34,6 +34,12 @@
 .zone-section{background:var(--bg);padding-top:85px;padding-bottom:75px}
 .zone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .zone-grid>div{background:#fff;border:1px solid var(--silver);padding:23px;min-height:100px;display:flex;flex-direction:column;justify-content:center}
+.zone-grid .zone-logo-card{align-items:center;text-align:center;gap:7px}
+.zone-logo-card img{width:66px;height:54px;object-fit:contain;margin-bottom:3px}
+.zone-logo-card strong{font:800 15px 'Manrope';color:var(--royal);letter-spacing:.02em}
+.zone-logo-card span{font-size:11px;color:var(--muted);margin-top:0}
+@media(max-width:700px){.zone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.zone-logo-card{padding:16px 10px!important}}
+
 .zone-grid strong{font:800 15px 'Manrope';color:var(--royal);letter-spacing:.02em}
 .zone-grid span{font-size:11px;color:var(--muted);margin-top:5px}
 .zone-note{font-size:10px;line-height:1.7;color:#77889a;margin:18px 0 0}
