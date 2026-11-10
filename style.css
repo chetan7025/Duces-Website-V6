@@ -342,3 +342,9 @@
 @media(max-width:420px){
  .pro-service-image{height:96px}
 }
+
+/* PRO & Visa overview banner */
+.pro-banner-section{padding:34px 0 12px;background:var(--white)}
+.pro-banner-section .wrap{max-width:1180px}
+.pro-services-banner{display:block;width:100%;height:auto;max-height:360px;object-fit:contain;object-position:center;border:1px solid var(--silver);border-radius:4px}
+@media(max-width:760px){.pro-banner-section{padding:22px 0 6px}.pro-services-banner{max-height:none;border-radius:3px}}
