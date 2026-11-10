@@ -137,3 +137,20 @@
 .banking-disclaimer{font-size:10px;line-height:1.8;color:#8190a0;margin-top:24px}
 @media(max-width:850px){.banking-intro-grid,.finance-layout,.mortgage-grid{grid-template-columns:1fr;gap:28px}.banking-service-grid,.bank-types-grid{grid-template-columns:1fr 1fr}.bank-doc-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.banking-service-grid,.bank-types-grid{grid-template-columns:1fr}.banking-service-card{min-height:0}.banking-intro,.banking-service-section,.bank-types,.bank-readiness,.finance-section,.mortgage-section{padding:62px 0}.bank-doc-panel,.mortgage-checklist{padding:22px 18px}}
+
+
+/* Banking & Finance imagery — aligned with the homepage visual system */
+.banking-advisory-image{margin:22px 0 24px;overflow:hidden;border:1px solid var(--silver);background:#fff}
+.banking-advisory-image img{display:block;width:100%;height:230px;object-fit:cover}
+.banking-card-image{display:block;width:100%;height:178px;object-fit:cover;margin:-28px -25px 24px;width:calc(100% + 50px);max-width:none}
+.banking-service-card{overflow:hidden}
+.finance-product{grid-template-columns:104px 42px 1fr;align-items:center}
+.finance-product img{width:104px;height:78px;object-fit:cover;display:block}
+.mortgage-card-image{display:block;width:100%;height:190px;object-fit:cover;margin:0 0 22px}
+@media(max-width:600px){
+ .banking-advisory-image img{height:190px}
+ .banking-card-image{height:165px}
+ .finance-product{grid-template-columns:82px 30px 1fr;gap:12px}
+ .finance-product img{width:82px;height:68px}
+ .mortgage-card-image{height:170px}
+}
