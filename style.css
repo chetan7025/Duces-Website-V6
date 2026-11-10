@@ -281,3 +281,41 @@
  .tax-obligation-list article{grid-template-columns:42px minmax(0,1fr);gap:12px}
  .tax-obligation-list article>span{width:38px;height:38px}
 }
+
+
+/* PRO & Visa page */
+.pro-hero{background-position:center 47%}
+.pro-intro{background:#fff}
+.pro-services{background:var(--bg)}
+.pro-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.pro-service-card{min-width:0;background:#fff;border:1px solid var(--silver);padding:27px 25px 25px;display:flex;flex-direction:column}
+.pro-service-card>span{font-size:9px;letter-spacing:.14em;color:var(--green);font-weight:700}
+.pro-service-symbol{font:700 31px 'Manrope';color:var(--gold);margin:22px 0 12px}
+.pro-service-card h3{font:700 18px 'Manrope';color:var(--royal);margin:0 0 9px}
+.pro-service-card p,.pro-service-card li{font-size:12px;line-height:1.8;color:var(--muted)}
+.pro-service-card p{margin:0 0 12px}
+.pro-service-card ul{padding-left:17px;margin:0}
+.visa-pathways{background:#fff}
+.visa-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.visa-path-grid article{border:1px solid var(--silver);border-left:3px solid var(--green);padding:25px 27px;background:#fff}
+.visa-path-grid small{font-size:9px;letter-spacing:.14em;color:var(--green);font-weight:700}
+.visa-path-grid h3{font:700 19px 'Manrope';color:var(--royal);margin:12px 0 7px}
+.visa-path-grid p{font-size:12px;line-height:1.85;color:var(--muted);margin:0}
+.pro-process{background:var(--royal);color:#fff}
+.pro-process .kicker{color:var(--gold)}
+.pro-process h2{color:#fff;font:800 clamp(34px,4.1vw,48px)/1.12 'Manrope';letter-spacing:-.04em;margin:16px 0 0}
+.pro-process h2 em{font:400 1em/1.2 Georgia,serif;color:var(--gold)}
+.pro-process .section-heading>p{color:#d0dce8}
+.pro-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:19px;margin-top:43px}
+.pro-steps article{border-top:1px solid #ffffff45;padding-top:17px;min-width:0}
+.pro-steps b{font:700 24px 'Manrope';color:var(--gold)}
+.pro-steps h3{font:700 15px 'Manrope';color:#fff;margin:15px 0 6px}
+.pro-steps p{font-size:11px;line-height:1.8;color:#d0dce8;margin:0}
+.pro-documents{background:#fff}
+.pro-faq{background:var(--bg)}
+.pro-disclaimer{background:#edf2f6;padding:27px 0}
+.pro-disclaimer strong{font:700 13px 'Manrope';color:var(--royal)}
+.pro-disclaimer p{font-size:11px;line-height:1.8;color:var(--muted);margin:7px 0 0}
+@media(max-width:900px){.pro-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pro-steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.pro-service-grid,.visa-path-grid{grid-template-columns:1fr}.pro-steps{grid-template-columns:1fr 1fr}.pro-services,.visa-pathways,.pro-process{padding:65px 0}}
+@media(max-width:420px){.pro-service-card{padding:23px 20px}.pro-steps{grid-template-columns:1fr}}
