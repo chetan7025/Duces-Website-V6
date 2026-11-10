@@ -234,7 +234,7 @@
 .accounting-intro{background:#fff}
 .accounting-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
 .accounting-service-card{min-width:0;background:#fff;border:1px solid var(--silver);overflow:hidden;display:flex;flex-direction:column}
-.accounting-service-card>img{display:block;width:100%;height:160px;max-height:160px;object-fit:cover}
+.accounting-service-card>img{display:block;width:100%;height:120px;max-height:120px;object-fit:cover}
 .accounting-card-body{padding:25px 25px 28px;display:flex;flex-direction:column;flex:1}
 .accounting-card-body>small{font-size:9px;letter-spacing:.14em;color:var(--green);font-weight:700}
 .accounting-card-body h3{font:700 19px 'Manrope';color:var(--royal);margin:12px 0 8px}
