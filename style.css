@@ -408,3 +408,24 @@
 @media(max-width:900px){.about-story-grid,.about-purpose-grid,.about-boundary-inner{gap:35px}.about-service-grid,.about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.about-story-grid,.about-purpose-grid,.about-boundary-inner{grid-template-columns:1fr;gap:25px}.about-service-grid,.about-principle-grid{grid-template-columns:1fr 1fr}.about-cta-inner{align-items:flex-start;flex-direction:column}.about-boundary{padding:58px 0}}
 @media(max-width:480px){.about-service-grid,.about-principle-grid{grid-template-columns:1fr}.about-service-card{padding:23px 20px}.about-cta{padding:58px 0}}
+
+
+/* About page — vision and mission */
+.about-vision-mission{background:var(--royal);padding:82px 0 38px}
+.about-vm-heading{max-width:720px;margin-bottom:38px}
+.about-vm-heading .kicker{color:var(--gold)}
+.about-vm-heading h2{font:800 clamp(32px,3.8vw,48px)/1.14 'Manrope',sans-serif;letter-spacing:-.04em;color:#fff;margin:15px 0}
+.about-vm-heading h2 em{font:400 1em/1.2 Georgia,serif;color:var(--gold)}
+.about-vm-heading>p{max-width:610px;color:#dce7f2;font-size:15px;line-height:1.8;margin:0}
+.about-vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.about-vm-card{padding:35px 34px 33px;min-width:0;min-height:275px}
+.about-vision{background:#fff;color:var(--royal)}
+.about-mission{background:#1976B9;color:#fff}
+.about-vm-label{font-size:11px;letter-spacing:.13em;font-weight:700;display:flex;align-items:center;gap:12px}
+.about-vm-label span{font:800 24px 'Manrope';color:var(--green)}
+.about-mission .about-vm-label span{color:var(--gold)}
+.about-vm-card h3{font:800 clamp(21px,2.2vw,27px)/1.3 'Manrope';letter-spacing:-.025em;margin:27px 0 14px}
+.about-vm-card p{font-size:13px;line-height:1.8;margin:0;opacity:.82}
+.about-vm-foot{display:flex;justify-content:space-between;gap:20px;padding-top:22px;margin-top:27px;border-top:1px solid rgba(255,255,255,.22);font-size:10px;letter-spacing:.13em;color:#dce7f2}
+@media(max-width:760px){.about-vision-mission{padding:62px 0 28px}.about-vm-grid{grid-template-columns:1fr}.about-vm-card{min-height:0;padding:29px 25px}.about-vm-foot{font-size:9px}}
+@media(max-width:420px){.about-vm-foot{flex-direction:column;gap:8px}}
