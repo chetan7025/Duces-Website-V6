@@ -321,13 +321,24 @@
 @media(max-width:420px){.pro-service-card{padding:23px 20px}.pro-steps{grid-template-columns:1fr}}
 
 
-/* PRO & Visa service imagery */
-.pro-service-card{overflow:hidden;padding-top:0}
-.pro-service-image{display:block;width:calc(100% + 50px);max-width:none;height:142px;object-fit:cover;margin:0 -25px 22px}
-.pro-service-symbol{margin-top:0}
+/* PRO & Visa service imagery — compact, consistent card thumbnails */
+.pro-service-card{overflow:hidden;padding:22px 22px 24px}
+.pro-service-image{
+ display:block;
+ width:100%;
+ height:88px;
+ max-width:100%;
+ object-fit:cover;
+ object-position:center;
+ margin:0 0 16px;
+ border:1px solid var(--silver);
+ border-radius:3px;
+}
+.pro-service-symbol{margin:0 0 9px;font-size:25px}
 @media(max-width:760px){
- .pro-service-image{width:calc(100% + 46px);height:155px;margin:0 -23px 20px}
+ .pro-service-card{padding:20px}
+ .pro-service-image{height:92px;margin-bottom:14px}
 }
 @media(max-width:420px){
- .pro-service-image{height:148px}
+ .pro-service-image{height:96px}
 }
