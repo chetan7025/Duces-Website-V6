@@ -35,7 +35,7 @@
 .zone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .zone-grid>div{background:#fff;border:1px solid var(--silver);padding:23px;min-height:100px;display:flex;flex-direction:column;justify-content:center}
 .zone-grid .zone-logo-card{align-items:center;justify-content:center;text-align:center;gap:6px;min-height:132px;padding:18px 16px}
-.zone-logo-card img{display:block;width:auto;max-width:92px;height:auto;max-height:42px;object-fit:contain;margin:0 auto 5px}
+.zone-logo-card img{display:block;width:100%;max-width:190px;height:88px;object-fit:contain;object-position:center;margin:0 auto 5px;}
 .zone-logo-card strong{font:800 15px 'Manrope';color:var(--royal);letter-spacing:.02em}
 .zone-logo-card span{font-size:11px;color:var(--muted);margin-top:0}
 @media(max-width:700px){.zone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.zone-grid .zone-logo-card{min-height:120px;padding:14px 10px!important}.zone-logo-card img{max-width:82px;max-height:36px}}
