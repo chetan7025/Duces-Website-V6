@@ -215,3 +215,16 @@
   .mortgage-grid{gap:34px}
   .faq-layout{gap:36px}
 }
+
+
+/* Banking page overflow correction: constrain grid children and images */
+.banking-intro-grid,.banking-service-grid,.banking-service-card,.bank-types-grid,.bank-type,.finance-layout,.finance-product-list,.finance-product,.finance-product section,.mortgage-grid,.mortgage-copy,.mortgage-checklist,.faq-layout,.faq-intro,.faq-list{min-width:0}
+.banking-service-grid,.bank-types-grid{width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}
+.banking-service-card{width:100%;max-width:100%;overflow:hidden}
+.banking-card-image{display:block;width:100%;max-width:100%;height:190px;margin:0 0 22px;object-fit:cover}
+.finance-product{grid-template-columns:minmax(0,112px) 38px minmax(0,1fr)}
+.finance-product img{display:block;width:100%;max-width:100%;min-width:0;height:82px;object-fit:cover}
+.banking-advisory-image,.banking-advisory-image img,.mortgage-card-image{max-width:100%}
+@media(min-width:851px) and (max-width:1100px){.banking-service-grid,.bank-types-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.banking-service-grid,.bank-types-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.banking-service-grid,.bank-types-grid{grid-template-columns:minmax(0,1fr)}.banking-card-image{height:auto;aspect-ratio:16/9}.finance-product{grid-template-columns:82px 30px minmax(0,1fr)}}
