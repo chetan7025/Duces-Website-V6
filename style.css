@@ -228,3 +228,56 @@
 @media(min-width:851px) and (max-width:1100px){.banking-service-grid,.bank-types-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:850px){.banking-service-grid,.bank-types-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.banking-service-grid,.bank-types-grid{grid-template-columns:minmax(0,1fr)}.banking-card-image{height:auto;aspect-ratio:16/9}.finance-product{grid-template-columns:82px 30px minmax(0,1fr)}}
+
+
+/* Accounting & Tax page */
+.accounting-intro{background:#fff}
+.accounting-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.accounting-service-card{min-width:0;background:#fff;border:1px solid var(--silver);overflow:hidden;display:flex;flex-direction:column}
+.accounting-service-card>img{display:block;width:100%;height:205px;object-fit:cover}
+.accounting-card-body{padding:25px 25px 28px;display:flex;flex-direction:column;flex:1}
+.accounting-card-body>small{font-size:9px;letter-spacing:.14em;color:var(--green);font-weight:700}
+.accounting-card-body h3{font:700 19px 'Manrope';color:var(--royal);margin:12px 0 8px}
+.accounting-card-body p,.accounting-card-body li{font-size:12px;line-height:1.8;color:var(--muted)}
+.accounting-card-body p{margin:0 0 12px}
+.accounting-card-body ul{padding-left:17px;margin:0}
+.accounting-cycle{background:var(--royal);color:#fff;padding:90px 0}
+.accounting-cycle .kicker{color:var(--gold)}
+.accounting-cycle h2{color:#fff;font:800 clamp(34px,4.1vw,48px)/1.12 'Manrope';letter-spacing:-.04em;margin:16px 0 0}
+.accounting-cycle h2 em{font-family:var(--serif);font-weight:400;color:var(--gold)}
+.accounting-cycle .section-heading>p{color:#d0dce8}
+.accounting-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;margin-top:46px}
+.accounting-steps article{border-top:1px solid #ffffff45;padding-top:17px;min-width:0}
+.accounting-steps b{font:700 25px 'Manrope';color:var(--gold)}
+.accounting-steps h3{font:700 15px 'Manrope';margin:16px 0 7px;color:#fff}
+.accounting-steps p{font-size:11px;line-height:1.8;color:#d0dce8;margin:0}
+.tax-compliance{background:var(--bg)}
+.tax-compliance-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:75px;align-items:start}
+.tax-compliance-grid>div{min-width:0}
+.tax-compliance-grid .text-link{margin-top:14px}
+.tax-obligation-list{background:#fff;border:1px solid var(--silver);padding:12px 28px}
+.tax-obligation-list article{display:grid;grid-template-columns:54px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px solid var(--silver)}
+.tax-obligation-list article:last-child{border-bottom:0}
+.tax-obligation-list article>span{display:grid;place-items:center;width:46px;height:46px;background:var(--bg);color:var(--green);font:700 13px 'Manrope'}
+.tax-obligation-list h3{font:700 17px 'Manrope';color:var(--royal);margin:0 0 6px}
+.tax-obligation-list p{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 7px}
+.tax-obligation-list small{font-size:10px;color:#8291a0;line-height:1.6}
+.accounting-documents{background:#fff}
+.accounting-faq{background:var(--bg)}
+@media(max-width:900px){
+ .accounting-service-grid{grid-template-columns:1fr 1fr}
+ .accounting-service-card:last-child{grid-column:1/-1}
+ .accounting-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .tax-compliance-grid{grid-template-columns:1fr;gap:35px}
+}
+@media(max-width:600px){
+ .accounting-service-grid{grid-template-columns:1fr}
+ .accounting-service-card:last-child{grid-column:auto}
+ .accounting-service-card>img{height:190px}
+ .accounting-card-body{padding:22px}
+ .accounting-cycle{padding:70px 0}
+ .accounting-steps{grid-template-columns:1fr 1fr;gap:22px}
+ .tax-obligation-list{padding:8px 18px}
+ .tax-obligation-list article{grid-template-columns:42px minmax(0,1fr);gap:12px}
+ .tax-obligation-list article>span{width:38px;height:38px}
+}
