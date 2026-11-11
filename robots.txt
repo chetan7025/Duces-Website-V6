@@ -1,1 +1,4 @@
-User-agent: *\nAllow: /\nSitemap: https://chetan7025.github.io/Duces-Website-V6/sitemap.xml\n
+User-agent: *
+Allow: /
+
+Sitemap: https://chetan7025.github.io/Duces-Website-V6/sitemap.xml
