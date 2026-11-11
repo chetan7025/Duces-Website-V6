@@ -460,3 +460,13 @@
  .pro-banner-layout{gap:14px}
  .pro-banner-note p{font-size:12px}
 }
+
+
+/* PRO & Visa page heading: clean white introduction instead of the oversized blue hero. */
+.pro-page-heading{background:#fff;color:var(--royal);padding:54px 0 34px;border-bottom:1px solid var(--silver)}
+.pro-page-heading .wrap{max-width:1160px}
+.pro-page-heading .kicker{color:var(--green)}
+.pro-page-heading h1{font:800 clamp(32px,4vw,48px)/1.14 'Manrope',sans-serif;letter-spacing:-.04em;margin:13px 0 10px;color:var(--royal)}
+.pro-page-heading h1 em{font:400 1em/1.2 Georgia,serif;color:var(--green)}
+.pro-page-heading p{max-width:700px;margin:0;color:var(--muted);font-size:14px;line-height:1.8}
+@media(max-width:760px){.pro-page-heading{padding:38px 0 24px}.pro-page-heading h1{font-size:clamp(30px,8vw,38px)}}
