@@ -1068,3 +1068,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:#4285F4;box-shadow:0 0 0 3px #4285F41c}
 .btn{transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+
+/* Online enquiry feedback states */
+.form-success{color:#087B58!important;font-weight:700}
+.enquiry-form button:disabled{opacity:.7;cursor:wait;transform:none}
