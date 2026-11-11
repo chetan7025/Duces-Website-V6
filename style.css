@@ -1106,3 +1106,124 @@ section.inner-hero::before{
 .nav a:hover,.text-link,.card-link,.form-note a{color:#2878D0!important}
 .nav .nav-contact:hover,.btn-blue:hover{background:#1F65B5!important}
 .service-card.featured{background:#2878D0!important;border-color:#2878D0!important}
+
+
+/* BANKING PAGE — align section rhythm and components with Business Setup */
+.banking-intro,
+.banking-service-section,
+.bank-types,
+.bank-readiness,
+.finance-section,
+.mortgage-section{
+  padding:78px 0!important;
+}
+.banking-intro{background:#fff!important}
+.banking-service-section,
+.bank-readiness,
+.mortgage-section{background:var(--bg)!important;color:var(--ink)!important}
+.bank-types,
+.finance-section{background:#fff!important}
+.banking-intro-grid{
+  grid-template-columns:1fr 1fr!important;
+  gap:clamp(38px,6vw,78px)!important;
+  align-items:start!important;
+}
+.banking-intro h2,
+.finance-section h2,
+.bank-readiness h2,
+.mortgage-section h2{
+  font:800 clamp(34px,4.1vw,48px)/1.14 'Manrope',sans-serif!important;
+  color:var(--royal)!important;
+  letter-spacing:-.04em!important;
+  margin:16px 0!important;
+}
+.banking-intro h2 em,
+.finance-section h2 em,
+.bank-readiness h2 em,
+.mortgage-section h2 em{
+  font:400 1em/1.2 Georgia,serif!important;
+  color:var(--green)!important;
+}
+.bank-readiness .section-heading.light h2{color:var(--royal)!important}
+.bank-readiness .section-heading.light h2 em{color:var(--green)!important}
+.bank-readiness .section-heading.light .kicker{color:var(--green)!important}
+.bank-readiness .section-heading>p{color:var(--muted)!important}
+.banking-service-grid,
+.bank-types-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  margin-top:34px!important;
+}
+.banking-service-card{
+  background:#fff!important;
+  border:1px solid var(--silver)!important;
+  padding:26px 24px!important;
+  min-height:100%!important;
+  box-shadow:none!important;
+}
+.banking-service-card h3,
+.bank-type h3,
+.finance-product h3,
+.mortgage-checklist h3,
+.bank-doc-panel h3{color:var(--royal)!important}
+.bank-type{
+  background:var(--bg)!important;
+  border:1px solid var(--silver)!important;
+  border-top:3px solid var(--green)!important;
+  padding:26px 24px!important;
+}
+.bank-doc-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:18px!important;
+  margin-top:34px!important;
+}
+.bank-doc-panel,
+.mortgage-checklist{
+  background:#fff!important;
+  border:1px solid var(--silver)!important;
+  padding:28px!important;
+}
+.finance-layout,
+.mortgage-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:clamp(38px,5vw,68px)!important;
+  align-items:start!important;
+}
+.finance-product-list{border-top:1px solid var(--silver)!important}
+.finance-product{
+  grid-template-columns:92px 34px minmax(0,1fr)!important;
+  align-items:center!important;
+  gap:15px!important;
+  padding:20px 0!important;
+}
+.finance-product img{
+  display:block!important;
+  width:92px!important;
+  height:72px!important;
+  object-fit:cover!important;
+  border:1px solid var(--silver)!important;
+}
+.mortgage-checklist{height:100%}
+.banking-faq{background:var(--bg)!important}
+.banking-faq .faq-layout{grid-template-columns:.8fr 1.2fr!important;gap:clamp(38px,5vw,68px)!important}
+.banking-disclaimer{color:var(--muted)!important}
+.bank-readiness .banking-disclaimer{color:var(--muted)!important}
+@media(max-width:760px){
+  .banking-intro,
+  .banking-service-section,
+  .bank-types,
+  .bank-readiness,
+  .finance-section,
+  .mortgage-section{padding:58px 0!important}
+  .banking-intro-grid,
+  .finance-layout,
+  .mortgage-grid,
+  .banking-faq .faq-layout{grid-template-columns:1fr!important;gap:28px!important}
+  .banking-service-grid,
+  .bank-types-grid,
+  .bank-doc-grid{grid-template-columns:1fr!important}
+  .finance-product{grid-template-columns:76px 28px minmax(0,1fr)!important;gap:12px!important}
+  .finance-product img{width:76px!important;height:66px!important}
+  .bank-doc-panel,
+  .mortgage-checklist{padding:22px 18px!important}
+}
