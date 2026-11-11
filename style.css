@@ -670,15 +670,13 @@
 .pro-banner-layout{row-gap:0}
 
 
-/* Shared curved hero signature: consistent on the homepage and every inner page. */
-.hero,.inner-hero{position:relative;overflow:hidden}
-.hero-curve-label{position:absolute;z-index:2;top:34px;right:5.2%;width:min(360px,32vw);pointer-events:none;opacity:.96}
-.hero-curve-label svg{display:block;width:100%;height:auto;overflow:visible}
-.hero-curve-label text{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;letter-spacing:3.1px;fill:#f3d99f;paint-order:stroke;stroke:rgba(18,59,112,.28);stroke-width:1px}
-/* Match the homepage curved label placement exactly on every inner-page hero. */
-.inner-hero .hero-curve-label{top:34px;right:5.2%;width:min(360px,32vw)}
+
+
+/* Inner-page hero typography and spacing follow the homepage reference. */
+.inner-hero{position:relative;overflow:hidden}
+.inner-hero .hero-note{margin-top:58px}
+.inner-hero .hero-note .note-line{flex:0 0 42px}
 @media(max-width:760px){
- .hero-curve-label{top:18px;right:4%;width:min(265px,68vw)}
- .hero-curve-label text{font-size:14px;letter-spacing:2.6px}
- .inner-hero .hero-curve-label{top:18px;right:4%;width:min(265px,68vw)}
+ .inner-hero .hero-note{margin-top:42px;font-size:10px;letter-spacing:.1em}
+ .inner-hero{background-position:58% center}
 }
