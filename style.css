@@ -771,3 +771,16 @@ section.inner-hero .hero-image-credit{position:absolute!important;z-index:2!impo
  section.inner-hero>.wrap.inner-hero-content{padding:58px 0 48px!important}
  section.inner-hero .hero-image-credit{bottom:15px!important;right:4%!important;font-size:8px!important}
 }
+
+
+/* Match the homepage's curved-looking gold italic serif line on every inner hero. */
+section.inner-hero h1 em{
+ font-family:Georgia,'Times New Roman',serif!important;
+ font-size:1em!important;
+ font-style:italic!important;
+ font-weight:400!important;
+ line-height:1.12!important;
+ color:var(--gold)!important;
+ letter-spacing:-.025em;
+ display:inline-block;
+}
