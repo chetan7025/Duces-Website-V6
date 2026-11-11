@@ -444,3 +444,19 @@
  .nav a{padding:12px 0;border-bottom:1px solid var(--silver)}
  .nav .nav-contact{padding:12px 15px;margin-top:10px;text-align:center}
 }
+
+
+/* PRO & Visa banner: remove the side panel and give the supplied artwork the full section width. */
+.pro-banner-section{padding:48px 0 42px;background:#fff}
+.pro-banner-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:center}
+.pro-banner-image-wrap{width:100%;max-width:1040px;margin:0 auto;display:block}
+.pro-services-banner{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border:1px solid var(--silver);border-radius:3px}
+.pro-banner-copy{display:none}
+.pro-banner-note{max-width:850px;margin:0 auto;text-align:center}
+.pro-banner-note p{margin:0 auto 10px;color:var(--muted);font-size:14px;line-height:1.7}
+.pro-banner-note .pro-banner-link{display:inline-block}
+@media(max-width:760px){
+ .pro-banner-section{padding:24px 0 26px}
+ .pro-banner-layout{gap:14px}
+ .pro-banner-note p{font-size:12px}
+}
