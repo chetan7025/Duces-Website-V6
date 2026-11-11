@@ -950,3 +950,71 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 @media(min-width:1101px){.nav{display:flex;position:static;align-items:center;gap:24px;padding:0;box-shadow:none}.menu-toggle{display:none}}
 @media(max-width:1100px){.nav{display:none}.nav.open{display:flex}.menu-toggle{display:block}}
+
+
+/* V6 launch refinements: preserve distinct page heroes instead of reusing the Home photograph. */
+section.inner-hero:not(.banking-hero){
+  background-color:var(--royal)!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#15558D 58%,#1976B9 100%)!important;
+  background-position:center!important;
+  background-size:cover!important;
+}
+section.inner-hero.setup-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#164F83 62%,#1976B9 100%)!important;
+}
+section.inner-hero.accounting-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#15517F 62%,#087B68 100%)!important;
+}
+section.inner-hero.pro-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#174D7D 64%,#1976B9 100%)!important;
+}
+section.inner-hero.about-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#164A78 64%,#087B68 100%)!important;
+}
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#15558D 70%,#1976B9 100%)!important;
+}
+section.inner-hero.banking-hero{
+  background-color:var(--royal)!important;
+  background-image:url('assets/images/banking-finance/banking-hero.png')!important;
+  background-position:center 48%!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+}
+@media(max-width:760px){
+  section.inner-hero:not(.banking-hero){background-position:center!important}
+  section.inner-hero.banking-hero{background-position:58% center!important}
+}
+
+/* Homepage trust section: a concise, transparent explanation of the DUCES process. */
+.home-approach{padding:86px 0;background:var(--bg);border-top:1px solid var(--silver)}
+.home-approach-heading{display:grid;grid-template-columns:1fr .8fr;gap:55px;align-items:end;margin-bottom:38px}
+.home-approach-heading h2{font:800 clamp(34px,4.1vw,48px)/1.14 'Manrope',sans-serif;color:var(--royal);letter-spacing:-.04em;margin:16px 0 0}
+.home-approach-heading h2 em{font:italic 400 1em/1.2 Georgia,serif;color:var(--green)}
+.home-approach-heading>p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 4px}
+.home-approach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.home-approach-grid article{background:#fff;border:1px solid var(--silver);border-top:3px solid var(--royal);padding:24px 22px;min-height:190px}
+.home-approach-grid article:nth-child(2){border-top-color:var(--blue)}
+.home-approach-grid article:nth-child(3){border-top-color:var(--green)}
+.home-approach-grid article:nth-child(4){border-top-color:var(--gold)}
+.home-approach-grid article>span{font:800 24px 'Manrope';color:var(--royal)}
+.home-approach-grid h3{font:700 16px 'Manrope';color:var(--royal);margin:17px 0 7px}
+.home-approach-grid p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}
+.home-approach-boundary{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;margin-top:22px;padding:20px 22px;background:var(--royal);color:#e0e9f2}
+.home-approach-boundary strong{color:var(--gold);font:700 12px 'Manrope';letter-spacing:.08em;text-transform:uppercase}
+.home-approach-boundary p{font-size:11px;line-height:1.8;margin:0}
+@media(max-width:850px){
+  .home-approach-heading{grid-template-columns:1fr;gap:18px}
+  .home-approach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+  .home-approach{padding:65px 0}
+  .home-approach-grid{grid-template-columns:1fr}
+  .home-approach-grid article{min-height:0}
+  .home-approach-boundary{grid-template-columns:1fr;gap:8px}
+}
+
+/* Form status and privacy link are visible and readable on small screens. */
+.form-note{line-height:1.7}
+.form-note a{color:var(--royal);font-weight:700;text-decoration:underline;text-underline-offset:3px}
