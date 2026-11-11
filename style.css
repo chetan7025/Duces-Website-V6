@@ -430,10 +430,6 @@
 @media(max-width:760px){.about-vision-mission{padding:62px 0 28px}.about-vm-grid{grid-template-columns:1fr}.about-vm-card{min-height:0;padding:29px 25px}.about-vm-foot{font-size:9px}}
 @media(max-width:420px){.about-vm-foot{flex-direction:column;gap:8px}}
 
-
-/* Display the uploaded Corporate Tax artwork in full without cropping */
-.accounting-service-card:nth-child(3)>img{object-fit:contain;object-position:center;background:#fff}
-
 /* Tablet and compact-laptop navigation: keep the full menu from squeezing the header. */
 @media(max-width:1100px){
  .nav-wrap{min-height:70px}
@@ -649,20 +645,6 @@
 @media(max-width:760px){
  .pro-banner-note{padding:0 2px}
  .pro-banner-note p{font-size:13px;line-height:1.65}
-}
-
-
-/* Final image sizing: give the Corporate Tax artwork more room while keeping it uncropped. */
-.accounting-service-card:nth-child(3)>img{
- height:190px;
- max-height:190px;
- width:100%;
- object-fit:contain;
- object-position:center;
- background:#fff;
-}
-@media(max-width:600px){
- .accounting-service-card:nth-child(3)>img{height:210px;max-height:210px}
 }
 
 /* The PRO banner stands on its own; no caption panel or pastel strip below it. */
@@ -932,7 +914,6 @@ section.inner-hero>.wrap.inner-hero-content{
 #services .service-card.featured .card-link{color:var(--royal)!important}
 
 
-/* Accounting service cards: keep all three uploaded images on the same visual height. */
-.accounting-service-card>img{height:190px;max-height:190px}
-.accounting-service-card:nth-child(3)>img{object-fit:contain;object-position:center;background:#fff}
+/* Accounting service cards: consistent desktop image height and crop across all three cards. */
+.accounting-service-card>img{height:190px;max-height:190px;object-fit:cover;object-position:center}
 @media(max-width:600px){.accounting-service-card>img{height:210px;max-height:210px}}
