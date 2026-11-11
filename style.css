@@ -930,3 +930,9 @@ section.inner-hero>.wrap.inner-hero-content{
 #services .service-card.featured .card-icon{background:rgba(255,255,255,.72)!important;color:var(--royal)!important}
 #services .service-card .card-link,
 #services .service-card.featured .card-link{color:var(--royal)!important}
+
+
+/* Accounting service cards: keep all three uploaded images on the same visual height. */
+.accounting-service-card>img{height:190px;max-height:190px}
+.accounting-service-card:nth-child(3)>img{object-fit:contain;object-position:center;background:#fff}
+@media(max-width:600px){.accounting-service-card>img{height:210px;max-height:210px}}
