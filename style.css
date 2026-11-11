@@ -430,3 +430,6 @@
 @media(max-width:760px){.about-vision-mission{padding:62px 0 28px}.about-vm-grid{grid-template-columns:1fr}.about-vm-card{min-height:0;padding:29px 25px}.about-vm-foot{font-size:9px}}
 @media(max-width:420px){.about-vm-foot{flex-direction:column;gap:8px}}
 
+
+/* Display the uploaded Corporate Tax artwork in full without cropping */
+.accounting-service-card:nth-child(3)>img{object-fit:contain;object-position:center;background:#fff}
