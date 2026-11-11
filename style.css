@@ -1323,3 +1323,99 @@ section.inner-hero::before{
   font-style:italic!important;
   color:var(--gold)!important;
 }
+
+
+/* DUCES V6 OFFICIAL BRAND PALETTE — approved 11 Nov 2026
+   Classic Royal Blue is the primary brand colour.
+   Bright Royal Blue is reserved for interactive buttons and links. */
+:root{
+  --royal:#123B70;
+  --blue:#4285D4;
+  --corporate-blue:#1976B9;
+  --light-royal-blue:#5B9BE8;
+  --soft-blue:#DCEBFA;
+  --ice-blue:#F0F6FD;
+  --green:#008F6B;
+  --gold:#D9AD55;
+  --white:#FFFFFF;
+  --bg:#F5F7FA;
+  --silver:#E5EBF1;
+  --deep:#123B70;
+  --mist-blue:#DCEBFA;
+}
+body{background:#FFFFFF}
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:#123B70!important;
+}
+.hero{background-color:#123B70!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(18,59,112,.94) 0%,rgba(18,59,112,.80) 52%,rgba(25,118,185,.24) 100%)!important;
+}
+.inner-hero,
+section.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#123B70!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#1976B9 72%,#5B9BE8 100%)!important;
+}
+.nav .nav-contact,.btn-blue{
+  background:#4285D4!important;
+  color:#FFFFFF!important;
+}
+.nav .nav-contact:hover,.btn-blue:hover{
+  background:#1976B9!important;
+  color:#FFFFFF!important;
+}
+.nav a:hover,.text-link,.card-link,.form-note a,.inner-text-link{
+  color:#4285D4!important;
+}
+.nav a.active{color:#008F6B!important}
+.btn-outline{border-color:rgba(255,255,255,.7);color:#FFFFFF}
+.btn-gold{background:#D9AD55;color:#123B70}
+.service-card.featured{
+  background:#DCEBFA!important;
+  border-color:#DCEBFA!important;
+  color:#123B70!important;
+}
+.service-card.featured h3,.service-card.featured p,
+.service-card.featured .card-no,.service-card.featured .card-link{
+  color:#123B70!important;
+}
+.service-card.featured .card-icon{color:#123B70!important}
+.section h2,.page-intro h2,.decision-section h2,.package-layout h2,
+.document-grid h2,.faq-intro h2,.banking-intro h2,
+.finance-section h2,.bank-readiness h2,.mortgage-section h2{
+  color:#123B70;
+}
+.section h2 em,.page-intro h2 em,.decision-section h2 em,
+.package-layout h2 em,.document-grid h2 em,.faq-intro h2 em,
+.banking-intro h2 em,.finance-section h2 em,
+.bank-readiness h2 em,.mortgage-section h2 em{
+  color:#008F6B;
+}
+.kicker,.eyebrow,.card-no,.contact-detail small{color:#008F6B}
+.hero .eyebrow,.inner-hero .kicker,.process .kicker,
+.page-cta .kicker,.banking .kicker{color:#D9AD55}
+.package-highlight h3,.package small,.jurisdiction-featured,
+.jurisdiction-index{color:#008F6B}
+.services,.tax,.bank-readiness,.banking-service-section,
+.mortgage-section,.jurisdiction-section,.zone-section,
+.faq-section,.banking-faq,.home-approach{background:#F0F6FD!important}
+.package-panel,.enquiry-form,.document-panel,.bank-doc-panel,
+.mortgage-checklist{background:#F5F7FA}
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285D4;
+  outline-offset:3px;
+}
+.enquiry-form input:focus,.enquiry-form select:focus,
+.enquiry-form textarea:focus{
+  border-color:#4285D4;
+  box-shadow:0 0 0 3px rgba(66,133,212,.12);
+}
