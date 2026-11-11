@@ -731,3 +731,43 @@
  .inner-hero .hero-note{margin-top:42px;font-size:10px;letter-spacing:.1em}
  .inner-hero .hero-image-credit{bottom:15px;right:4%;font-size:8px}
 }
+
+
+/* Highest-priority shared hero rule: prevent page-specific hero styles or cached layout rules from diverging. */
+section.inner-hero{
+ position:relative!important;
+ display:flex!important;
+ align-items:center!important;
+ min-height:590px!important;
+ padding:0!important;
+ color:#fff!important;
+ background-color:var(--royal)!important;
+ background-image:url('assets/duces-hero.jpg')!important;
+ background-position:center 47%!important;
+ background-size:cover!important;
+ background-repeat:no-repeat!important;
+ overflow:hidden!important;
+}
+section.inner-hero::before{
+ content:""!important;
+ display:block!important;
+ position:absolute!important;
+ inset:0!important;
+ z-index:0!important;
+ background:linear-gradient(90deg,rgba(10,42,79,.94) 0%,rgba(18,59,112,.82) 48%,rgba(18,59,112,.18) 100%)!important;
+}
+section.inner-hero>.inner-hero-content,
+section.inner-hero>.wrap.inner-hero-content{
+ position:relative!important;
+ z-index:1!important;
+ width:100%!important;
+ max-width:1160px!important;
+ padding:80px 0!important;
+}
+section.inner-hero .hero-image-credit{position:absolute!important;z-index:2!important;bottom:20px!important;right:5%!important;color:#fff!important}
+@media(max-width:760px){
+ section.inner-hero{min-height:415px!important;background-position:58% center!important}
+ section.inner-hero>.inner-hero-content,
+ section.inner-hero>.wrap.inner-hero-content{padding:58px 0 48px!important}
+ section.inner-hero .hero-image-credit{bottom:15px!important;right:4%!important;font-size:8px!important}
+}
