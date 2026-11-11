@@ -668,3 +668,16 @@
 /* The PRO banner stands on its own; no caption panel or pastel strip below it. */
 .pro-banner-note{display:none!important}
 .pro-banner-layout{row-gap:0}
+
+
+/* Shared curved hero signature: consistent on the homepage and every inner page. */
+.hero,.inner-hero{position:relative;overflow:hidden}
+.hero-curve-label{position:absolute;z-index:2;top:34px;right:5.2%;width:min(360px,32vw);pointer-events:none;opacity:.96}
+.hero-curve-label svg{display:block;width:100%;height:auto;overflow:visible}
+.hero-curve-label text{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;letter-spacing:3.1px;fill:#f3d99f;paint-order:stroke;stroke:rgba(18,59,112,.28);stroke-width:1px}
+.inner-hero .hero-curve-label{top:27px;right:5.2%}
+@media(max-width:760px){
+ .hero-curve-label{top:18px;right:4%;width:min(265px,68vw)}
+ .hero-curve-label text{font-size:14px;letter-spacing:2.6px}
+ .inner-hero .hero-curve-label{top:17px;right:4%}
+}
