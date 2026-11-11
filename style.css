@@ -1018,3 +1018,10 @@ section.inner-hero.banking-hero{
 /* Form status and privacy link are visible and readable on small screens. */
 .form-note{line-height:1.7}
 .form-note a{color:var(--royal);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Business setup package comparison: make inclusions and exclusions easy to verify. */
+.package-checklist{margin-top:20px;padding:18px 19px;background:#fff;border:1px solid var(--silver);border-left:3px solid var(--green)}
+.package-checklist h4{font:700 12px 'Manrope';color:var(--royal);margin:0 0 10px}
+.package-checklist ul{margin:0;padding-left:17px}
+.package-checklist li{font-size:11px;line-height:1.75;color:var(--muted);padding:2px 0}
