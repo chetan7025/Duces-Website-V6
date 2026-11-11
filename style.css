@@ -917,3 +917,36 @@ section.inner-hero>.wrap.inner-hero-content{
 /* Accounting service cards: consistent desktop image height and crop across all three cards. */
 .accounting-service-card>img{height:190px;max-height:190px;object-fit:cover;object-position:center}
 @media(max-width:600px){.accounting-service-card>img{height:210px;max-height:210px}}
+
+
+/* V6 refinements: stronger Royal Blue identity, distinct page heroes and accessibility. */
+.proof{background:var(--royal);border-bottom-color:#0c2e56}
+.proof-grid>div{border-right-color:rgba(255,255,255,.22)}
+.proof span{color:#e0e9f2}
+.proof b{color:var(--gold)}
+.inner-hero{position:relative;isolation:isolate;overflow:hidden}
+.inner-hero:before{content:"";position:absolute;z-index:-1;width:430px;height:430px;border:1px solid rgba(217,173,85,.25);border-radius:50%;right:-155px;top:-245px;pointer-events:none}
+.inner-hero:after{content:"";position:absolute;z-index:-1;width:300px;height:300px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-90px;bottom:-220px;pointer-events:none}
+.inner-hero.setup-hero,.inner-hero.accounting-hero,.inner-hero.pro-hero,.inner-hero.about-hero,.inner-hero.contact-hero,.inner-hero.privacy-hero{
+ background:linear-gradient(118deg,#123B70 0%,#15558D 58%,#1976B9 100%);
+}
+.inner-hero.banking-hero{
+ background:linear-gradient(90deg,rgba(18,59,112,.94) 0%,rgba(18,59,112,.78) 50%,rgba(18,59,112,.22) 100%),url('assets/images/banking-finance/banking-hero.png') center 48%/cover no-repeat;
+}
+.inner-hero.setup-hero:before{width:560px;height:560px;right:-120px;top:-290px;border-color:rgba(217,173,85,.34)}
+.inner-hero.accounting-hero:before{right:-130px;top:-240px;border-color:rgba(0,143,107,.28)}
+.inner-hero.pro-hero:before{right:-130px;top:-245px;border-color:rgba(217,173,85,.3)}
+.inner-hero .inner-hero-content{position:relative;z-index:1}
+.inner-hero .hero-image-credit{z-index:1}
+.nav .nav-contact{background:var(--royal);color:#fff}
+.nav .nav-contact:hover{background:var(--blue);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.privacy-review-note{margin-top:28px;padding:20px 22px;background:#F5F7FA;border-left:4px solid var(--gold);color:var(--muted);font-size:13px;line-height:1.8}
+.privacy-review-note strong{color:var(--royal)}
+.legal-content{max-width:850px}
+.legal-content h2{font:700 20px 'Manrope',sans-serif;color:var(--royal);margin:32px 0 10px}
+.legal-content p,.legal-content li{font-size:14px;line-height:1.85;color:var(--muted)}
+.legal-content ul{padding-left:22px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@media(min-width:1101px){.nav{display:flex;position:static;align-items:center;gap:24px;padding:0;box-shadow:none}.menu-toggle{display:none}}
+@media(max-width:1100px){.nav{display:none}.nav.open{display:flex}.menu-toggle{display:block}}
