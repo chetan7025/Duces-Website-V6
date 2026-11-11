@@ -917,3 +917,609 @@ section.inner-hero>.wrap.inner-hero-content{
 /* Accounting service cards: consistent desktop image height and crop across all three cards. */
 .accounting-service-card>img{height:190px;max-height:190px;object-fit:cover;object-position:center}
 @media(max-width:600px){.accounting-service-card>img{height:210px;max-height:210px}}
+
+
+/* V6 refinements: stronger Royal Blue identity, distinct page heroes and accessibility. */
+.proof{background:var(--royal);border-bottom-color:#0c2e56}
+.proof-grid>div{border-right-color:rgba(255,255,255,.22)}
+.proof span{color:#e0e9f2}
+.proof b{color:var(--gold)}
+.inner-hero{position:relative;isolation:isolate;overflow:hidden}
+.inner-hero:before{content:"";position:absolute;z-index:-1;width:430px;height:430px;border:1px solid rgba(217,173,85,.25);border-radius:50%;right:-155px;top:-245px;pointer-events:none}
+.inner-hero:after{content:"";position:absolute;z-index:-1;width:300px;height:300px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-90px;bottom:-220px;pointer-events:none}
+.inner-hero.setup-hero,.inner-hero.accounting-hero,.inner-hero.pro-hero,.inner-hero.about-hero,.inner-hero.contact-hero,.inner-hero.privacy-hero{
+ background:linear-gradient(118deg,#123B70 0%,#15558D 58%,#1976B9 100%);
+}
+.inner-hero.banking-hero{
+  background:linear-gradient(118deg,#123B70 0%,#164A78 64%,#087B68 100%);
+}
+.inner-hero.setup-hero:before{width:560px;height:560px;right:-120px;top:-290px;border-color:rgba(217,173,85,.34)}
+.inner-hero.accounting-hero:before{right:-130px;top:-240px;border-color:rgba(0,143,107,.28)}
+.inner-hero.pro-hero:before{right:-130px;top:-245px;border-color:rgba(217,173,85,.3)}
+.inner-hero .inner-hero-content{position:relative;z-index:1}
+.inner-hero .hero-image-credit{z-index:1}
+.nav .nav-contact{background:var(--royal);color:#fff}
+.nav .nav-contact:hover{background:var(--blue);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.privacy-review-note{margin-top:28px;padding:20px 22px;background:#F5F7FA;border-left:4px solid var(--gold);color:var(--muted);font-size:13px;line-height:1.8}
+.privacy-review-note strong{color:var(--royal)}
+.legal-content{max-width:850px}
+.legal-content h2{font:700 20px 'Manrope',sans-serif;color:var(--royal);margin:32px 0 10px}
+.legal-content p,.legal-content li{font-size:14px;line-height:1.85;color:var(--muted)}
+.legal-content ul{padding-left:22px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+@media(min-width:1101px){.nav{display:flex;position:static;align-items:center;gap:24px;padding:0;box-shadow:none}.menu-toggle{display:none}}
+@media(max-width:1100px){.nav{display:none}.nav.open{display:flex}.menu-toggle{display:block}}
+
+
+/* V6 launch refinements: preserve distinct page heroes instead of reusing the Home photograph. */
+section.inner-hero:not(.banking-hero){
+  background-color:var(--royal)!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#15558D 58%,#1976B9 100%)!important;
+  background-position:center!important;
+  background-size:cover!important;
+}
+section.inner-hero.setup-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#164F83 62%,#1976B9 100%)!important;
+}
+section.inner-hero.accounting-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#15517F 62%,#087B68 100%)!important;
+}
+section.inner-hero.pro-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#174D7D 64%,#1976B9 100%)!important;
+}
+section.inner-hero.about-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#164A78 64%,#087B68 100%)!important;
+}
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero{
+  background-image:linear-gradient(118deg,#123B70 0%,#15558D 70%,#1976B9 100%)!important;
+}
+section.inner-hero.banking-hero{
+  background-color:var(--royal)!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#164A78 64%,#087B68 100%)!important;
+  background-position:center!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+}
+@media(max-width:760px){
+  section.inner-hero:not(.banking-hero){background-position:center!important}
+  section.inner-hero.banking-hero{background-position:58% center!important}
+}
+
+/* Homepage trust section: a concise, transparent explanation of the DUCES process. */
+.home-approach{padding:86px 0;background:var(--bg);border-top:1px solid var(--silver)}
+.home-approach-heading{display:grid;grid-template-columns:1fr .8fr;gap:55px;align-items:end;margin-bottom:38px}
+.home-approach-heading h2{font:800 clamp(34px,4.1vw,48px)/1.14 'Manrope',sans-serif;color:var(--royal);letter-spacing:-.04em;margin:16px 0 0}
+.home-approach-heading h2 em{font:italic 400 1em/1.2 Georgia,serif;color:var(--green)}
+.home-approach-heading>p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 4px}
+.home-approach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.home-approach-grid article{background:#fff;border:1px solid var(--silver);border-top:3px solid var(--royal);padding:24px 22px;min-height:190px}
+.home-approach-grid article:nth-child(2){border-top-color:var(--blue)}
+.home-approach-grid article:nth-child(3){border-top-color:var(--green)}
+.home-approach-grid article:nth-child(4){border-top-color:var(--gold)}
+.home-approach-grid article>span{font:800 24px 'Manrope';color:var(--royal)}
+.home-approach-grid h3{font:700 16px 'Manrope';color:var(--royal);margin:17px 0 7px}
+.home-approach-grid p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}
+.home-approach-boundary{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;margin-top:22px;padding:20px 22px;background:var(--royal);color:#e0e9f2}
+.home-approach-boundary strong{color:var(--gold);font:700 12px 'Manrope';letter-spacing:.08em;text-transform:uppercase}
+.home-approach-boundary p{font-size:11px;line-height:1.8;margin:0}
+@media(max-width:850px){
+  .home-approach-heading{grid-template-columns:1fr;gap:18px}
+  .home-approach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+  .home-approach{padding:65px 0}
+  .home-approach-grid{grid-template-columns:1fr}
+  .home-approach-grid article{min-height:0}
+  .home-approach-boundary{grid-template-columns:1fr;gap:8px}
+}
+
+/* Form status and privacy link are visible and readable on small screens. */
+.form-note{line-height:1.7}
+.form-note a{color:var(--royal);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Business setup package comparison: make inclusions and exclusions easy to verify. */
+.package-checklist{margin-top:20px;padding:18px 19px;background:#fff;border:1px solid var(--silver);border-left:3px solid var(--green)}
+.package-checklist h4{font:700 12px 'Manrope';color:var(--royal);margin:0 0 10px}
+.package-checklist ul{margin:0;padding-left:17px}
+.package-checklist li{font-size:11px;line-height:1.75;color:var(--muted);padding:2px 0}
+
+
+/* V6 reliability and refreshed Google-inspired blue system — Nov 2026 */
+:root{
+  --royal:#2878D0;
+  --blue:#4285F4;
+  --deep:#174477;
+  --green:#008F6B;
+  --gold:#D9AD55;
+}
+/* Keep large dark sections dark enough for readable white text. */
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:var(--deep)!important;
+}
+.hero{
+  background-color:var(--deep);
+}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(15,48,86,.94) 0%,rgba(23,68,119,.82) 48%,rgba(40,120,208,.18) 100%);
+}
+.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-image:linear-gradient(118deg,#174477 0%,#2878D0 66%,#4285F4 100%)!important;
+}
+.nav .nav-contact,.btn-blue{background:var(--royal);color:#fff}
+.nav a:hover,.text-link,.card-link,.form-note a{color:#2467B7}
+.nav .nav-contact:hover,.btn-blue:hover{background:#1F65B5}
+.service-card.featured{background:var(--deep);border-color:var(--deep)}
+.home-approach-grid article{border-top-color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285F4;
+  outline-offset:3px;
+}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:#4285F4;box-shadow:0 0 0 3px #4285F41c}
+.btn{transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+
+/* Online enquiry feedback states */
+.form-success{color:#087B58!important;font-weight:700}
+.enquiry-form button:disabled{opacity:.7;cursor:wait;transform:none}
+
+
+/* FINAL PALETTE OVERRIDE — ensure legacy page-specific rules cannot restore old navy */
+:root{
+  --royal:#4285F4;
+  --blue:#2878D0;
+  --deep:#174477;
+}
+/* Main homepage image overlay: brighter blue while retaining white-text contrast. */
+.hero{background-color:#4285F4!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(23,68,119,.90) 0%,rgba(40,120,208,.76) 52%,rgba(66,133,244,.24) 100%)!important;
+}
+/* Every inner-page hero gets the same new blue treatment. */
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#4285F4!important;
+  background-image:linear-gradient(118deg,#2878D0 0%,#4285F4 62%,#73A7F8 100%)!important;
+}
+section.inner-hero::before{
+  background:linear-gradient(90deg,rgba(23,68,119,.20) 0%,rgba(23,68,119,.08) 100%)!important;
+}
+.topline{background:#2878D0!important}
+.nav .nav-contact,.btn-blue{background:#2878D0!important}
+.nav a:hover,.text-link,.card-link,.form-note a{color:#2878D0!important}
+.nav .nav-contact:hover,.btn-blue:hover{background:#1F65B5!important}
+.service-card.featured{background:#2878D0!important;border-color:#2878D0!important}
+
+
+/* BANKING PAGE — align section rhythm and components with Business Setup */
+.banking-intro,
+.banking-service-section,
+.bank-types,
+.bank-readiness,
+.finance-section,
+.mortgage-section{
+  padding:78px 0!important;
+}
+.banking-intro{background:#fff!important}
+.banking-service-section,
+.bank-readiness,
+.mortgage-section{background:var(--bg)!important;color:var(--ink)!important}
+.bank-types,
+.finance-section{background:#fff!important}
+.banking-intro-grid{
+  grid-template-columns:1fr 1fr!important;
+  gap:clamp(38px,6vw,78px)!important;
+  align-items:start!important;
+}
+.banking-intro h2,
+.finance-section h2,
+.bank-readiness h2,
+.mortgage-section h2{
+  font:800 clamp(34px,4.1vw,48px)/1.14 'Manrope',sans-serif!important;
+  color:var(--royal)!important;
+  letter-spacing:-.04em!important;
+  margin:16px 0!important;
+}
+.banking-intro h2 em,
+.finance-section h2 em,
+.bank-readiness h2 em,
+.mortgage-section h2 em{
+  font:400 1em/1.2 Georgia,serif!important;
+  color:var(--green)!important;
+}
+.bank-readiness .section-heading.light h2{color:var(--royal)!important}
+.bank-readiness .section-heading.light h2 em{color:var(--green)!important}
+.bank-readiness .section-heading.light .kicker{color:var(--green)!important}
+.bank-readiness .section-heading>p{color:var(--muted)!important}
+.banking-service-grid,
+.bank-types-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  margin-top:34px!important;
+}
+.banking-service-card{
+  background:#fff!important;
+  border:1px solid var(--silver)!important;
+  padding:26px 24px!important;
+  min-height:100%!important;
+  box-shadow:none!important;
+}
+.banking-service-card h3,
+.bank-type h3,
+.finance-product h3,
+.mortgage-checklist h3,
+.bank-doc-panel h3{color:var(--royal)!important}
+.bank-type{
+  background:var(--bg)!important;
+  border:1px solid var(--silver)!important;
+  border-top:3px solid var(--green)!important;
+  padding:26px 24px!important;
+}
+.bank-doc-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:18px!important;
+  margin-top:34px!important;
+}
+.bank-doc-panel,
+.mortgage-checklist{
+  background:#fff!important;
+  border:1px solid var(--silver)!important;
+  padding:28px!important;
+}
+.finance-layout,
+.mortgage-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:clamp(38px,5vw,68px)!important;
+  align-items:start!important;
+}
+.finance-product-list{border-top:1px solid var(--silver)!important}
+.finance-product{
+  grid-template-columns:92px 34px minmax(0,1fr)!important;
+  align-items:center!important;
+  gap:15px!important;
+  padding:20px 0!important;
+}
+.finance-product img{
+  display:block!important;
+  width:92px!important;
+  height:72px!important;
+  object-fit:cover!important;
+  border:1px solid var(--silver)!important;
+}
+.mortgage-checklist{height:100%}
+.banking-faq{background:var(--bg)!important}
+.banking-faq .faq-layout{grid-template-columns:.8fr 1.2fr!important;gap:clamp(38px,5vw,68px)!important}
+.banking-disclaimer{color:var(--muted)!important}
+.bank-readiness .banking-disclaimer{color:var(--muted)!important}
+@media(max-width:760px){
+  .banking-intro,
+  .banking-service-section,
+  .bank-types,
+  .bank-readiness,
+  .finance-section,
+  .mortgage-section{padding:58px 0!important}
+  .banking-intro-grid,
+  .finance-layout,
+  .mortgage-grid,
+  .banking-faq .faq-layout{grid-template-columns:1fr!important;gap:28px!important}
+  .banking-service-grid,
+  .bank-types-grid,
+  .bank-doc-grid{grid-template-columns:1fr!important}
+  .finance-product{grid-template-columns:76px 28px minmax(0,1fr)!important;gap:12px!important}
+  .finance-product img{width:76px!important;height:66px!important}
+  .bank-doc-panel,
+  .mortgage-checklist{padding:22px 18px!important}
+}
+
+
+/* Banking section headings: consistent alignment and typography */
+.banking-service-section .section-heading,
+.bank-types .section-heading{
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:space-between!important;
+  gap:50px!important;
+  margin:0 0 42px!important;
+}
+.banking-service-section .section-heading>div,
+.bank-types .section-heading>div{
+  flex:1 1 auto!important;
+  min-width:0!important;
+}
+.banking-service-section .section-heading h2,
+.bank-types .section-heading h2{
+  font:800 clamp(34px,4.1vw,48px)/1.14 'Manrope',sans-serif!important;
+  color:var(--royal)!important;
+  letter-spacing:-.04em!important;
+  margin:16px 0 0!important;
+}
+.banking-service-section .section-heading h2 em,
+.bank-types .section-heading h2 em{
+  font:400 1em/1.2 Georgia,serif!important;
+  color:var(--green)!important;
+}
+.banking-service-section .section-heading>p,
+.bank-types .section-heading>p{
+  flex:0 1 350px!important;
+  max-width:350px!important;
+  margin:0 0 5px!important;
+  color:var(--muted)!important;
+  font-size:13px!important;
+  line-height:1.75!important;
+}
+@media(max-width:760px){
+  .banking-service-section .section-heading,
+  .bank-types .section-heading{
+    display:block!important;
+    margin-bottom:30px!important;
+  }
+  .banking-service-section .section-heading>p,
+  .bank-types .section-heading>p{
+    max-width:none!important;
+    margin:18px 0 0!important;
+  }
+}
+
+
+/* Match Banking section titles exactly to Business Setup section heading system */
+.banking-service-section .section-heading h2,
+.bank-types .section-heading h2{
+  font:800 clamp(38px,5.2vw,62px)/1.12 'Manrope',sans-serif!important;
+  letter-spacing:-.045em!important;
+  color:var(--royal)!important;
+  margin:22px 0!important;
+}
+.banking-service-section .section-heading h2 em,
+.bank-types .section-heading h2 em{
+  font-family:var(--serif)!important;
+  font-weight:400!important;
+  font-style:italic!important;
+  color:var(--gold)!important;
+}
+@media(max-width:760px){
+  .banking-service-section .section-heading h2,
+  .bank-types .section-heading h2{
+    font-size:clamp(34px,8vw,42px)!important;
+    line-height:1.12!important;
+    margin:18px 0!important;
+  }
+}
+
+
+/* FINAL: Banking headings use the same title treatment as .section h2 */
+.banking-service-section .section-heading h2,
+.bank-types .section-heading h2{
+  font-family:'Manrope',sans-serif!important;
+  font-size:clamp(38px,5.2vw,62px)!important;
+  font-weight:800!important;
+  line-height:1.12!important;
+  letter-spacing:-.045em!important;
+  color:var(--royal)!important;
+  margin:22px 0!important;
+}
+.banking-service-section .section-heading h2 em,
+.bank-types .section-heading h2 em{
+  font-family:var(--serif)!important;
+  font-size:1em!important;
+  font-weight:400!important;
+  line-height:inherit!important;
+  font-style:italic!important;
+  color:var(--gold)!important;
+}
+
+
+/* DUCES V6 OFFICIAL BRAND PALETTE — approved 11 Nov 2026
+   Classic Royal Blue is the primary brand colour.
+   Bright Royal Blue is reserved for interactive buttons and links. */
+:root{
+  --royal:#123B70;
+  --blue:#4285D4;
+  --corporate-blue:#1976B9;
+  --light-royal-blue:#5B9BE8;
+  --soft-blue:#DCEBFA;
+  --ice-blue:#F0F6FD;
+  --green:#008F6B;
+  --gold:#D9AD55;
+  --white:#FFFFFF;
+  --bg:#F5F7FA;
+  --silver:#E5EBF1;
+  --deep:#123B70;
+  --mist-blue:#DCEBFA;
+}
+body{background:#FFFFFF}
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:#123B70!important;
+}
+.hero{background-color:#123B70!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(18,59,112,.94) 0%,rgba(18,59,112,.80) 52%,rgba(25,118,185,.24) 100%)!important;
+}
+.inner-hero,
+section.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#123B70!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#1976B9 72%,#5B9BE8 100%)!important;
+}
+.nav .nav-contact,.btn-blue{
+  background:#4285D4!important;
+  color:#FFFFFF!important;
+}
+.nav .nav-contact:hover,.btn-blue:hover{
+  background:#1976B9!important;
+  color:#FFFFFF!important;
+}
+.nav a:hover,.text-link,.card-link,.form-note a,.inner-text-link{
+  color:#4285D4!important;
+}
+.nav a.active{color:#008F6B!important}
+.btn-outline{border-color:rgba(255,255,255,.7);color:#FFFFFF}
+.btn-gold{background:#D9AD55;color:#123B70}
+.service-card.featured{
+  background:#DCEBFA!important;
+  border-color:#DCEBFA!important;
+  color:#123B70!important;
+}
+.service-card.featured h3,.service-card.featured p,
+.service-card.featured .card-no,.service-card.featured .card-link{
+  color:#123B70!important;
+}
+.service-card.featured .card-icon{color:#123B70!important}
+.section h2,.page-intro h2,.decision-section h2,.package-layout h2,
+.document-grid h2,.faq-intro h2,.banking-intro h2,
+.finance-section h2,.bank-readiness h2,.mortgage-section h2{
+  color:#123B70;
+}
+.section h2 em,.page-intro h2 em,.decision-section h2 em,
+.package-layout h2 em,.document-grid h2 em,.faq-intro h2 em,
+.banking-intro h2 em,.finance-section h2 em,
+.bank-readiness h2 em,.mortgage-section h2 em{
+  color:#008F6B;
+}
+.kicker,.eyebrow,.card-no,.contact-detail small{color:#008F6B}
+.hero .eyebrow,.inner-hero .kicker,.process .kicker,
+.page-cta .kicker,.banking .kicker{color:#D9AD55}
+.package-highlight h3,.package small,.jurisdiction-featured,
+.jurisdiction-index{color:#008F6B}
+.services,.tax,.bank-readiness,.banking-service-section,
+.mortgage-section,.jurisdiction-section,.zone-section,
+.faq-section,.banking-faq,.home-approach{background:#F0F6FD!important}
+.package-panel,.enquiry-form,.document-panel,.bank-doc-panel,
+.mortgage-checklist{background:#F5F7FA}
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285D4;
+  outline-offset:3px;
+}
+.enquiry-form input:focus,.enquiry-form select:focus,
+.enquiry-form textarea:focus{
+  border-color:#4285D4;
+  box-shadow:0 0 0 3px rgba(66,133,212,.12);
+}
+
+
+/* DUCES V6 FINAL APPROVED PALETTE — CLASSIC ROYAL BLUE + FOUR SOFT COLOURS
+   Main: Classic Royal Blue. Interactive: Bright Royal Blue.
+   Four agreed soft colours: Mist Blue, Warm Beige, Soft Green, Lavender Pink. */
+:root{
+  --royal:#123B70;
+  --blue:#4285D4;
+  --corporate-blue:#1976B9;
+  --light-royal-blue:#5B9BE8;
+  --green:#008F6B;
+  --gold:#D9AD55;
+  --white:#FFFFFF;
+  --bg:#F5F7FA;
+  --silver:#E5EBF1;
+  --deep:#123B70;
+  --mist-blue:#EAF2F8;
+  --warm-beige:#F7F1E8;
+  --soft-green:#EAF4EE;
+  --lavender-pink:#F5EDF5;
+  --mist-blue-border:#D8E5F0;
+  --warm-beige-border:#E9DDCA;
+  --soft-green-border:#D7E8DC;
+  --lavender-pink-border:#E8D9E8;
+}
+/* Brand foundations and dark corporate sections */
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:#123B70!important;
+}
+.hero{background-color:#123B70!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(18,59,112,.94) 0%,rgba(18,59,112,.80) 52%,rgba(25,118,185,.24) 100%)!important;
+}
+section.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#123B70!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#1976B9 72%,#5B9BE8 100%)!important;
+}
+/* Interactive buttons and text links */
+.btn:not(.btn-outline),.nav .nav-contact,.btn-blue,.submit{
+  background:#4285D4!important;
+  border-color:#4285D4!important;
+  color:#FFFFFF!important;
+}
+.btn:not(.btn-outline):hover,.nav .nav-contact:hover,.btn-blue:hover,.submit:hover{
+  background:#1976B9!important;
+  border-color:#1976B9!important;
+  color:#FFFFFF!important;
+}
+.nav a:hover,.text-link,.card-link,.form-note a,.inner-text-link{
+  color:#4285D4!important;
+}
+.nav a.active{color:#008F6B!important}
+.btn-outline{background:transparent!important;border-color:rgba(255,255,255,.72)!important;color:#FFFFFF!important}
+/* Headings and restrained supporting accents */
+.section h2,.page-intro h2,.decision-section h2,.package-layout h2,
+.document-grid h2,.faq-intro h2,.banking-intro h2,.finance-section h2,
+.bank-readiness h2,.mortgage-section h2{
+  color:#123B70!important;
+}
+.section h2 em,.page-intro h2 em,.decision-section h2 em,
+.package-layout h2 em,.document-grid h2 em,.faq-intro h2 em,
+.banking-intro h2 em,.finance-section h2 em,.bank-readiness h2 em,
+.mortgage-section h2 em{color:#008F6B!important}
+.kicker,.eyebrow,.card-no,.contact-detail small{color:#008F6B}
+.hero .eyebrow,.inner-hero .kicker,.process .kicker,
+.page-cta .kicker,.banking .kicker{color:#D9AD55}
+/* Four agreed soft colours, applied consistently to service highlights */
+#services .service-card:nth-child(4n+1){background:#EAF2F8!important;border-color:#D8E5F0!important;border-top-color:#AFC7DC!important}
+#services .service-card:nth-child(4n+2){background:#F7F1E8!important;border-color:#E9DDCA!important;border-top-color:#DCC8A9!important}
+#services .service-card:nth-child(4n+3){background:#EAF4EE!important;border-color:#D7E8DC!important;border-top-color:#B7D6C1!important}
+#services .service-card:nth-child(4n){background:#F5EDF5!important;border-color:#E8D9E8!important;border-top-color:#D8BBD8!important}
+#services .service-card.featured{color:#18324D!important}
+#services .service-card h3,#services .service-card.featured h3{color:#123B70!important}
+#services .service-card p,#services .service-card.featured p{color:#627387!important}
+#services .service-card .card-no,#services .service-card.featured .card-no,
+#services .service-card .card-link,#services .service-card.featured .card-link{color:#4285D4!important}
+#services .service-card .card-icon,#services .service-card.featured .card-icon{color:#123B70!important}
+/* Calm section surfaces and retained Emerald/Champagne accents */
+.services,.tax,.bank-readiness,.banking-service-section,.mortgage-section,
+.jurisdiction-section,.zone-section,.faq-section,.banking-faq,.home-approach{
+  background:#F5F7FA!important;
+}
+.package-panel,.enquiry-form,.document-panel,.bank-doc-panel,.mortgage-checklist{
+  background:#F5F7FA;
+}
+.package-highlight h3,.package small,.jurisdiction-index{color:#008F6B}
+.gold-dot,.proof b{color:#D9AD55}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{
+  border-color:#4285D4;
+  box-shadow:0 0 0 3px rgba(66,133,212,.12);
+}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285D4;
+  outline-offset:3px;
+}
