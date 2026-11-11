@@ -848,3 +848,16 @@ section.inner-hero>.wrap.inner-hero-content{
     width:90%!important;
   }
 }
+
+
+/* Give inner-page hero copy a clear left inset inside the image, matching the Home composition's breathing room. */
+section.inner-hero>.wrap.inner-hero-content{
+  padding-left:28px!important;
+  padding-right:0!important;
+}
+@media(max-width:760px){
+  section.inner-hero>.wrap.inner-hero-content{
+    padding-left:16px!important;
+    padding-right:0!important;
+  }
+}
