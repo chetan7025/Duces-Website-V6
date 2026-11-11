@@ -1529,27 +1529,27 @@ textarea:focus-visible,summary:focus-visible{
    Use a light neutral footer surface with Classic Royal Blue typography
    and Bright Royal Blue links for a cleaner, consistent brand finish. */
 .footer{
-  background:#F5F7FA!important;
-  color:#123B70!important;
-  border-top:1px solid #E5EBF1;
+  background:#4285D4!important;
+  color:#FFFFFF!important;
+  border-top:1px solid #5B9BE8;
 }
 .footer-brand p,
 .footer-bottom,
 .footer-main>div:not(:first-child) a{
-  color:#123B70!important;
+  color:#FFFFFF!important;
 }
 .footer h4{
-  color:#123B70!important;
+  color:#FFFFFF!important;
 }
 .footer-main{
-  border-bottom:1px solid #D8E5F0!important;
+  border-bottom:1px solid rgba(255,255,255,.28)!important;
 }
 .footer-main>div:not(:first-child) a:hover,
 .footer a:hover{
-  color:#4285D4!important;
+  color:#D9AD55!important;
 }
 .footer-brand span{
-  color:#123B70!important;
+  color:#FFFFFF!important;
 }
 
 
