@@ -861,3 +861,54 @@ section.inner-hero>.wrap.inner-hero-content{
     padding-right:0!important;
   }
 }
+
+
+/* Homepage refinements: clearer brand name and four balanced soft-colour service cards. */
+.hero .eyebrow{
+  font-size:14px;
+  letter-spacing:.2em;
+  font-weight:700;
+}
+.hero .eyebrow i{display:none!important}
+.hero .btn-gold{gap:0}
+#services .service-card,
+#services .service-card.featured{
+  color:var(--ink);
+  border:1px solid var(--silver);
+  border-top-width:3px;
+  box-shadow:none;
+}
+#services .service-card:nth-child(4n+1){
+  background:var(--mist-blue);
+  border-color:var(--mist-blue-border);
+  border-top-color:#AFC7DC;
+}
+#services .service-card:nth-child(4n+2){
+  background:var(--warm-beige);
+  border-color:var(--warm-beige-border);
+  border-top-color:#DCC8A9;
+}
+#services .service-card:nth-child(4n+3){
+  background:var(--soft-green);
+  border-color:var(--soft-green-border);
+  border-top-color:#B7D6C1;
+}
+#services .service-card:nth-child(4n){
+  background:var(--lavender-pink);
+  border-color:var(--lavender-pink-border);
+  border-top-color:#D8BBD8;
+}
+#services .service-card h3,
+#services .service-card.featured h3{color:var(--royal)}
+#services .service-card p,
+#services .service-card.featured p{color:var(--muted)}
+#services .service-card .card-no,
+#services .service-card.featured .card-no{color:var(--royal)}
+#services .service-card .card-icon,
+#services .service-card.featured .card-icon{
+  background:rgba(255,255,255,.68);
+  color:var(--royal);
+}
+#services .service-card .card-link,
+#services .service-card.featured .card-link{color:var(--royal)}
+#services .service-card:hover{border-color:#b7c9d9;box-shadow:0 12px 30px #173b6010}
