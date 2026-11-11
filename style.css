@@ -1523,3 +1523,31 @@ textarea:focus-visible,summary:focus-visible{
   outline:3px solid #4285D4;
   outline-offset:3px;
 }
+
+
+/* V6 FOOTER — remove the dark navy-looking block.
+   Use a light neutral footer surface with Classic Royal Blue typography
+   and Bright Royal Blue links for a cleaner, consistent brand finish. */
+.footer{
+  background:#F5F7FA!important;
+  color:#123B70!important;
+  border-top:1px solid #E5EBF1;
+}
+.footer-brand p,
+.footer-bottom,
+.footer-main>div:not(:first-child) a{
+  color:#123B70!important;
+}
+.footer h4{
+  color:#123B70!important;
+}
+.footer-main{
+  border-bottom:1px solid #D8E5F0!important;
+}
+.footer-main>div:not(:first-child) a:hover,
+.footer a:hover{
+  color:#4285D4!important;
+}
+.footer-brand span{
+  color:#123B70!important;
+}
