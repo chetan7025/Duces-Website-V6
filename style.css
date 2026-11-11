@@ -1301,3 +1301,25 @@ section.inner-hero::before{
     margin:18px 0!important;
   }
 }
+
+
+/* FINAL: Banking headings use the same title treatment as .section h2 */
+.banking-service-section .section-heading h2,
+.bank-types .section-heading h2{
+  font-family:'Manrope',sans-serif!important;
+  font-size:clamp(38px,5.2vw,62px)!important;
+  font-weight:800!important;
+  line-height:1.12!important;
+  letter-spacing:-.045em!important;
+  color:var(--royal)!important;
+  margin:22px 0!important;
+}
+.banking-service-section .section-heading h2 em,
+.bank-types .section-heading h2 em{
+  font-family:var(--serif)!important;
+  font-size:1em!important;
+  font-weight:400!important;
+  line-height:inherit!important;
+  font-style:italic!important;
+  color:var(--gold)!important;
+}
