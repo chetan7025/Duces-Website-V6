@@ -505,3 +505,15 @@
 .contact-expect h2 em{font:400 1em/1.2 Georgia,serif;color:var(--green)}
 .contact-expect-grid>p{font-size:13px;line-height:1.85;color:var(--muted);margin:0}
 @media(max-width:760px){.contact-page-heading{padding:42px 0 32px}.contact-page-heading h1{font-size:clamp(32px,8vw,40px)}.contact-page-heading+.contact{padding:48px 0}.contact-expect{padding:48px 0}.contact-expect-grid{grid-template-columns:1fr;gap:18px}.contact-grid{grid-template-columns:1fr;gap:35px}.enquiry-form{padding:24px 19px}.form-row{grid-template-columns:1fr}}
+
+
+/* Restore a photographic hero on the PRO page without bringing back the solid blue banner. */
+.pro-page-heading{
+ background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.91) 52%,rgba(255,255,255,.72) 100%),url('assets/duces-hero.jpg') center 48%/cover no-repeat;
+ border-bottom:1px solid var(--silver);
+}
+.pro-page-heading-grid{min-height:310px}
+@media(max-width:760px){
+ .pro-page-heading{background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.86)),url('assets/duces-hero.jpg') center/cover no-repeat}
+ .pro-page-heading-grid{min-height:0}
+}
