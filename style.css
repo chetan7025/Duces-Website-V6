@@ -634,3 +634,8 @@
  .pro-banner-note{padding:15px 16px}
  .about-service-card,.jurisdiction-card,.banking-service-card,.pro-service-card{min-height:0}
 }
+
+/* Contact detail colour order: keep the three contact methods in the intended pastel sequence. */
+.contact-detail:nth-of-type(2){background:var(--mist-blue);border-left-color:var(--mist-blue-border)}
+.contact-detail:nth-of-type(3){background:var(--warm-beige);border-left-color:var(--warm-beige-border)}
+.contact-detail:nth-of-type(4){background:var(--lavender-pink);border-left-color:var(--lavender-pink-border)}
