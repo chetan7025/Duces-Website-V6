@@ -912,3 +912,21 @@ section.inner-hero>.wrap.inner-hero-content{
 #services .service-card .card-link,
 #services .service-card.featured .card-link{color:var(--royal)}
 #services .service-card:hover{border-color:#b7c9d9;box-shadow:0 12px 30px #173b6010}
+
+
+/* Home page service cards: no dark-blue featured card; use the four soft palette fills consistently. */
+#services .service-card:nth-child(1){background:var(--mist-blue)!important;border-color:var(--mist-blue-border)!important;border-top-color:#AFC7DC!important}
+#services .service-card:nth-child(2){background:var(--warm-beige)!important;border-color:var(--warm-beige-border)!important;border-top-color:#DCC8A9!important}
+#services .service-card:nth-child(3){background:var(--soft-green)!important;border-color:var(--soft-green-border)!important;border-top-color:#B7D6C1!important}
+#services .service-card:nth-child(4){background:var(--lavender-pink)!important;border-color:var(--lavender-pink-border)!important;border-top-color:#D8BBD8!important}
+#services .service-card.featured{color:var(--ink)!important}
+#services .service-card h3,
+#services .service-card.featured h3{color:var(--royal)!important}
+#services .service-card p,
+#services .service-card.featured p{color:var(--muted)!important}
+#services .service-card .card-no,
+#services .service-card.featured .card-no{color:var(--royal)!important}
+#services .service-card .card-icon,
+#services .service-card.featured .card-icon{background:rgba(255,255,255,.72)!important;color:var(--royal)!important}
+#services .service-card .card-link,
+#services .service-card.featured .card-link{color:var(--royal)!important}
