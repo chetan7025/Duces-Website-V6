@@ -1073,3 +1073,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* Online enquiry feedback states */
 .form-success{color:#087B58!important;font-weight:700}
 .enquiry-form button:disabled{opacity:.7;cursor:wait;transform:none}
+
+
+/* FINAL PALETTE OVERRIDE — ensure legacy page-specific rules cannot restore old navy */
+:root{
+  --royal:#4285F4;
+  --blue:#2878D0;
+  --deep:#174477;
+}
+/* Main homepage image overlay: brighter blue while retaining white-text contrast. */
+.hero{background-color:#4285F4!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(23,68,119,.90) 0%,rgba(40,120,208,.76) 52%,rgba(66,133,244,.24) 100%)!important;
+}
+/* Every inner-page hero gets the same new blue treatment. */
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#4285F4!important;
+  background-image:linear-gradient(118deg,#2878D0 0%,#4285F4 62%,#73A7F8 100%)!important;
+}
+section.inner-hero::before{
+  background:linear-gradient(90deg,rgba(23,68,119,.20) 0%,rgba(23,68,119,.08) 100%)!important;
+}
+.topline{background:#2878D0!important}
+.nav .nav-contact,.btn-blue{background:#2878D0!important}
+.nav a:hover,.text-link,.card-link,.form-note a{color:#2878D0!important}
+.nav .nav-contact:hover,.btn-blue:hover{background:#1F65B5!important}
+.service-card.featured{background:#2878D0!important;border-color:#2878D0!important}
