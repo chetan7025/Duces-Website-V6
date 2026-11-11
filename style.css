@@ -1551,3 +1551,32 @@ textarea:focus-visible,summary:focus-visible{
 .footer-brand span{
   color:#123B70!important;
 }
+
+
+/* BANKING PAGE — lock both section titles to one identical type scale */
+.banking-service-section .section-heading h2,
+.bank-types .section-heading h2{
+  font-family:'Manrope',sans-serif!important;
+  font-size:clamp(38px,5.2vw,62px)!important;
+  font-weight:800!important;
+  line-height:1.12!important;
+  letter-spacing:-.045em!important;
+  margin:22px 0!important;
+}
+.banking-service-section .section-heading h2 em,
+.bank-types .section-heading h2 em{
+  font-family:var(--serif)!important;
+  font-size:1em!important;
+  font-weight:400!important;
+  line-height:inherit!important;
+  font-style:italic!important;
+  color:#008F6B!important;
+}
+@media(max-width:760px){
+  .banking-service-section .section-heading h2,
+  .bank-types .section-heading h2{
+    font-size:clamp(34px,8vw,42px)!important;
+    line-height:1.12!important;
+    margin:18px 0!important;
+  }
+}
