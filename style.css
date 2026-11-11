@@ -930,3 +930,13 @@ section.inner-hero>.wrap.inner-hero-content{
 #services .service-card.featured .card-icon{background:rgba(255,255,255,.72)!important;color:var(--royal)!important}
 #services .service-card .card-link,
 #services .service-card.featured .card-link{color:var(--royal)!important}
+
+/* About page: give the four green emphasis lines the same angled italic treatment as the approved hero typography. */
+.about-story h2 em,
+.about-purpose h2 em,
+.about-principles h2 em,
+.about-boundary h2 em{
+  font-style:italic!important;
+  display:inline-block;
+  margin-left:6px;
+}
