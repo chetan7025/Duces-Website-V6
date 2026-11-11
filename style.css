@@ -1025,3 +1025,46 @@ section.inner-hero.banking-hero{
 .package-checklist h4{font:700 12px 'Manrope';color:var(--royal);margin:0 0 10px}
 .package-checklist ul{margin:0;padding-left:17px}
 .package-checklist li{font-size:11px;line-height:1.75;color:var(--muted);padding:2px 0}
+
+
+/* V6 reliability and refreshed Google-inspired blue system — Nov 2026 */
+:root{
+  --royal:#2878D0;
+  --blue:#4285F4;
+  --deep:#174477;
+  --green:#008F6B;
+  --gold:#D9AD55;
+}
+/* Keep large dark sections dark enough for readable white text. */
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:var(--deep)!important;
+}
+.hero{
+  background-color:var(--deep);
+}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(15,48,86,.94) 0%,rgba(23,68,119,.82) 48%,rgba(40,120,208,.18) 100%);
+}
+.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-image:linear-gradient(118deg,#174477 0%,#2878D0 66%,#4285F4 100%)!important;
+}
+.nav .nav-contact,.btn-blue{background:var(--royal);color:#fff}
+.nav a:hover,.text-link,.card-link,.form-note a{color:#2467B7}
+.nav .nav-contact:hover,.btn-blue:hover{background:#1F65B5}
+.service-card.featured{background:var(--deep);border-color:var(--deep)}
+.home-approach-grid article{border-top-color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285F4;
+  outline-offset:3px;
+}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:#4285F4;box-shadow:0 0 0 3px #4285F41c}
+.btn{transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
