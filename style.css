@@ -639,3 +639,14 @@
 .contact-detail:nth-of-type(2){background:var(--mist-blue);border-left-color:var(--mist-blue-border)}
 .contact-detail:nth-of-type(3){background:var(--warm-beige);border-left-color:var(--warm-beige-border)}
 .contact-detail:nth-of-type(4){background:var(--lavender-pink);border-left-color:var(--lavender-pink-border)}
+
+
+/* PRO & Visa banner caption: align the supporting sentence with the banner artwork edges. */
+.pro-banner-layout{grid-template-columns:minmax(0,1fr);justify-items:stretch;row-gap:12px}
+.pro-banner-image-wrap{width:100%;max-width:1040px;margin:0 auto}
+.pro-banner-note{width:100%;max-width:1040px;margin:0 auto;padding:0 4px;box-sizing:border-box;text-align:left}
+.pro-banner-note p{max-width:none;width:100%;margin:0;color:var(--muted);font-size:14px;line-height:1.65;text-align:left}
+@media(max-width:760px){
+ .pro-banner-note{padding:0 2px}
+ .pro-banner-note p{font-size:13px;line-height:1.65}
+}
