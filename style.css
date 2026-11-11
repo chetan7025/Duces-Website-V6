@@ -680,3 +680,54 @@
  .inner-hero .hero-note{margin-top:42px;font-size:10px;letter-spacing:.1em}
  .inner-hero{background-position:58% center}
 }
+
+
+/* Exact homepage hero treatment reused by every inner page. */
+.inner-hero{
+ position:relative;
+ display:flex;
+ align-items:center;
+ min-height:590px;
+ padding:0;
+ color:#fff;
+ background:var(--royal) url('assets/duces-hero.jpg') center 47%/cover no-repeat;
+ overflow:hidden;
+}
+.inner-hero::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(90deg,rgba(10,42,79,.94) 0%,rgba(18,59,112,.82) 48%,rgba(18,59,112,.18) 100%);
+}
+.inner-hero-content{
+ position:relative;
+ z-index:1;
+ width:100%;
+ max-width:1160px;
+ padding:80px 0;
+}
+.inner-hero .kicker{color:#efd49a;font-size:11px;font-weight:700;letter-spacing:.18em}
+.inner-hero h1{
+ font:800 clamp(38px,5.2vw,62px)/1.12 'Manrope',sans-serif;
+ letter-spacing:-.045em;
+ margin:22px 0;
+ max-width:900px;
+}
+.inner-hero h1 em{
+ font-family:var(--serif);
+ font-weight:400;
+ color:var(--gold);
+}
+.inner-hero-content>p{max-width:570px;color:#e0e9f2;font-size:16px;line-height:1.8}
+.inner-hero-actions{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:32px}
+.inner-hero .hero-note{position:relative;margin-top:58px;color:#dce6ef;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.inner-hero .hero-note .note-line{display:inline-block;width:42px;height:1px;background:var(--gold);flex:0 0 42px}
+.inner-hero .hero-image-credit{z-index:2}
+@media(max-width:760px){
+ .inner-hero{min-height:415px;background-position:58% center}
+ .inner-hero-content{padding:58px 0 48px}
+ .inner-hero h1{font-size:39px;line-height:1.12;margin:20px 0}
+ .inner-hero-content>p{font-size:14px;line-height:1.8;max-width:570px}
+ .inner-hero .hero-note{margin-top:42px;font-size:10px;letter-spacing:.1em}
+ .inner-hero .hero-image-credit{bottom:15px;right:4%;font-size:8px}
+}
