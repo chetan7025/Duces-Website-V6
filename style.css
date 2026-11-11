@@ -1419,3 +1419,107 @@ select:focus-visible,textarea:focus-visible,summary:focus-visible{
   border-color:#4285D4;
   box-shadow:0 0 0 3px rgba(66,133,212,.12);
 }
+
+
+/* DUCES V6 FINAL APPROVED PALETTE — CLASSIC ROYAL BLUE + FOUR SOFT COLOURS
+   Main: Classic Royal Blue. Interactive: Bright Royal Blue.
+   Four agreed soft colours: Mist Blue, Warm Beige, Soft Green, Lavender Pink. */
+:root{
+  --royal:#123B70;
+  --blue:#4285D4;
+  --corporate-blue:#1976B9;
+  --light-royal-blue:#5B9BE8;
+  --green:#008F6B;
+  --gold:#D9AD55;
+  --white:#FFFFFF;
+  --bg:#F5F7FA;
+  --silver:#E5EBF1;
+  --deep:#123B70;
+  --mist-blue:#EAF2F8;
+  --warm-beige:#F7F1E8;
+  --soft-green:#EAF4EE;
+  --lavender-pink:#F5EDF5;
+  --mist-blue-border:#D8E5F0;
+  --warm-beige-border:#E9DDCA;
+  --soft-green-border:#D7E8DC;
+  --lavender-pink-border:#E8D9E8;
+}
+/* Brand foundations and dark corporate sections */
+.topline,.banking,.process,.setup-process,.page-cta,.home-approach-boundary{
+  background-color:#123B70!important;
+}
+.hero{background-color:#123B70!important}
+.hero-shade{
+  background:linear-gradient(90deg,rgba(18,59,112,.94) 0%,rgba(18,59,112,.80) 52%,rgba(25,118,185,.24) 100%)!important;
+}
+section.inner-hero,
+section.inner-hero:not(.banking-hero),
+section.inner-hero.setup-hero,
+section.inner-hero.accounting-hero,
+section.inner-hero.pro-hero,
+section.inner-hero.about-hero,
+section.inner-hero.contact-hero,
+section.inner-hero.privacy-hero,
+section.inner-hero.banking-hero{
+  background-color:#123B70!important;
+  background-image:linear-gradient(118deg,#123B70 0%,#1976B9 72%,#5B9BE8 100%)!important;
+}
+/* Interactive buttons and text links */
+.btn:not(.btn-outline),.nav .nav-contact,.btn-blue,.submit{
+  background:#4285D4!important;
+  border-color:#4285D4!important;
+  color:#FFFFFF!important;
+}
+.btn:not(.btn-outline):hover,.nav .nav-contact:hover,.btn-blue:hover,.submit:hover{
+  background:#1976B9!important;
+  border-color:#1976B9!important;
+  color:#FFFFFF!important;
+}
+.nav a:hover,.text-link,.card-link,.form-note a,.inner-text-link{
+  color:#4285D4!important;
+}
+.nav a.active{color:#008F6B!important}
+.btn-outline{background:transparent!important;border-color:rgba(255,255,255,.72)!important;color:#FFFFFF!important}
+/* Headings and restrained supporting accents */
+.section h2,.page-intro h2,.decision-section h2,.package-layout h2,
+.document-grid h2,.faq-intro h2,.banking-intro h2,.finance-section h2,
+.bank-readiness h2,.mortgage-section h2{
+  color:#123B70!important;
+}
+.section h2 em,.page-intro h2 em,.decision-section h2 em,
+.package-layout h2 em,.document-grid h2 em,.faq-intro h2 em,
+.banking-intro h2 em,.finance-section h2 em,.bank-readiness h2 em,
+.mortgage-section h2 em{color:#008F6B!important}
+.kicker,.eyebrow,.card-no,.contact-detail small{color:#008F6B}
+.hero .eyebrow,.inner-hero .kicker,.process .kicker,
+.page-cta .kicker,.banking .kicker{color:#D9AD55}
+/* Four agreed soft colours, applied consistently to service highlights */
+#services .service-card:nth-child(4n+1){background:#EAF2F8!important;border-color:#D8E5F0!important;border-top-color:#AFC7DC!important}
+#services .service-card:nth-child(4n+2){background:#F7F1E8!important;border-color:#E9DDCA!important;border-top-color:#DCC8A9!important}
+#services .service-card:nth-child(4n+3){background:#EAF4EE!important;border-color:#D7E8DC!important;border-top-color:#B7D6C1!important}
+#services .service-card:nth-child(4n){background:#F5EDF5!important;border-color:#E8D9E8!important;border-top-color:#D8BBD8!important}
+#services .service-card.featured{color:#18324D!important}
+#services .service-card h3,#services .service-card.featured h3{color:#123B70!important}
+#services .service-card p,#services .service-card.featured p{color:#627387!important}
+#services .service-card .card-no,#services .service-card.featured .card-no,
+#services .service-card .card-link,#services .service-card.featured .card-link{color:#4285D4!important}
+#services .service-card .card-icon,#services .service-card.featured .card-icon{color:#123B70!important}
+/* Calm section surfaces and retained Emerald/Champagne accents */
+.services,.tax,.bank-readiness,.banking-service-section,.mortgage-section,
+.jurisdiction-section,.zone-section,.faq-section,.banking-faq,.home-approach{
+  background:#F5F7FA!important;
+}
+.package-panel,.enquiry-form,.document-panel,.bank-doc-panel,.mortgage-checklist{
+  background:#F5F7FA;
+}
+.package-highlight h3,.package small,.jurisdiction-index{color:#008F6B}
+.gold-dot,.proof b{color:#D9AD55}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{
+  border-color:#4285D4;
+  box-shadow:0 0 0 3px rgba(66,133,212,.12);
+}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+textarea:focus-visible,summary:focus-visible{
+  outline:3px solid #4285D4;
+  outline-offset:3px;
+}
