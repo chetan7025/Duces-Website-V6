@@ -530,3 +530,107 @@
 @media(max-width:760px){
  .inner-hero{min-height:340px;padding:62px 0 66px;background-position:center 47%}
 }
+
+
+/* DUCES soft highlight palette — light supporting colours, with Royal Blue retained as the primary brand colour. */
+:root{
+ --mist-blue:#EAF2F8;
+ --warm-beige:#F7F1E8;
+ --soft-green:#EAF4EE;
+ --lavender-pink:#F5EDF5;
+ --mist-blue-border:#D8E5F0;
+ --warm-beige-border:#E9DDCA;
+ --soft-green-border:#D7E8DC;
+ --lavender-pink-border:#E8D9E8;
+}
+
+/* Homepage service highlights */
+.service-card:not(.featured){border-top:3px solid var(--mist-blue-border)}
+.service-card:not(.featured) .card-icon{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--mist-blue);color:var(--royal)}
+.service-card:not(.featured) .card-no{color:var(--royal)}
+.service-card.featured{border-top:3px solid var(--gold)}
+.service-card.featured .card-icon{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#ffffff18}
+
+/* About page: four service cards and principle details */
+.about-service-card:nth-child(4n+1){background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.about-service-card:nth-child(4n+2){background:var(--warm-beige);border-color:var(--warm-beige-border)}
+.about-service-card:nth-child(4n+3){background:var(--soft-green);border-color:var(--soft-green-border)}
+.about-service-card:nth-child(4n){background:var(--lavender-pink);border-color:var(--lavender-pink-border)}
+.about-service-card:hover{border-color:var(--blue)}
+.about-principle-grid article:nth-child(4n+1){border-top:3px solid var(--mist-blue-border)}
+.about-principle-grid article:nth-child(4n+2){border-top:3px solid var(--warm-beige-border)}
+.about-principle-grid article:nth-child(4n+3){border-top:3px solid var(--soft-green-border)}
+.about-principle-grid article:nth-child(4n){border-top:3px solid var(--lavender-pink-border)}
+.about-vision{background:var(--mist-blue)}
+.about-mission{background:var(--soft-green);color:var(--royal)}
+.about-mission h3,.about-mission p,.about-mission .about-vm-foot{color:var(--royal)}
+.about-mission .about-vm-label span{color:var(--green)}
+.about-vm-foot{border-color:#123b7020}
+
+/* Business setup: highlight jurisdiction choices and practical information panels */
+.jurisdiction-card:nth-child(3n+1){background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.jurisdiction-card:nth-child(3n+2){background:var(--warm-beige);border-color:var(--warm-beige-border)}
+.jurisdiction-card:nth-child(3n){background:var(--soft-green);border-color:var(--soft-green-border)}
+.jurisdiction-featured{border-top:4px solid var(--green)}
+.package-panel{background:var(--warm-beige);border-color:var(--warm-beige-border)}
+.document-panel{background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.decision-list>div:nth-child(4n+1)>b{color:#7899B5}
+.decision-list>div:nth-child(4n+2)>b{color:#B18D62}
+.decision-list>div:nth-child(4n+3)>b{color:var(--green)}
+.decision-list>div:nth-child(4n)>b{color:#A782A7}
+
+/* Banking & Finance: soft card fills, while dark blue remains reserved for the main brand sections */
+.banking-service-card:nth-child(3n+1){background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.banking-service-card:nth-child(3n+2){background:var(--warm-beige);border-color:var(--warm-beige-border)}
+.banking-service-card:nth-child(3n){background:var(--soft-green);border-color:var(--soft-green-border)}
+.banking-service-card .service-index{color:var(--royal)}
+.bank-type:nth-child(3n+1){background:var(--mist-blue);border-top-color:#AFC7DC}
+.bank-type:nth-child(3n+2){background:var(--warm-beige);border-top-color:#DCC8A9}
+.bank-type:nth-child(3n){background:var(--soft-green);border-top-color:#B7D6C1}
+.bank-doc-panel:first-child{background:var(--mist-blue)}
+.bank-doc-panel:last-child{background:var(--warm-beige)}
+.mortgage-checklist{background:var(--lavender-pink);border-color:var(--lavender-pink-border)}
+.finance-product:nth-child(4n+1)>b{color:#7899B5}
+.finance-product:nth-child(4n+2)>b{color:#B18D62}
+.finance-product:nth-child(4n+3)>b{color:var(--green)}
+.finance-product:nth-child(4n)>b{color:#A782A7}
+
+/* Accounting & Tax: keep supplied photographs unchanged; tint only the information area beneath them */
+.accounting-card-body{background:var(--mist-blue)}
+.accounting-service-card:nth-child(3n+2) .accounting-card-body{background:var(--warm-beige)}
+.accounting-service-card:nth-child(3n) .accounting-card-body{background:var(--soft-green)}
+.tax-obligation-list{background:#fff}
+.tax-obligation-list article:nth-child(3n+1)>span{background:var(--mist-blue);color:var(--royal)}
+.tax-obligation-list article:nth-child(3n+2)>span{background:var(--warm-beige);color:#806744}
+.tax-obligation-list article:nth-child(3n)>span{background:var(--soft-green);color:var(--green)}
+.accounting-documents .document-panel{background:var(--warm-beige);border-color:var(--warm-beige-border)}
+
+/* PRO & Visa: subtle colour coding for service types and applicant pathways */
+.pro-banner-note{background:var(--soft-green);padding:18px 24px;border:1px solid var(--soft-green-border)}
+.pro-service-card:nth-child(4n+1){background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.pro-service-card:nth-child(4n+2){background:var(--warm-beige);border-color:var(--warm-beige-border)}
+.pro-service-card:nth-child(4n+3){background:var(--soft-green);border-color:var(--soft-green-border)}
+.pro-service-card:nth-child(4n){background:var(--lavender-pink);border-color:var(--lavender-pink-border)}
+.pro-service-symbol{color:var(--royal)}
+.visa-path-grid article:nth-child(4n+1){background:var(--mist-blue);border-color:var(--mist-blue-border);border-left-color:#AFC7DC}
+.visa-path-grid article:nth-child(4n+2){background:var(--warm-beige);border-color:var(--warm-beige-border);border-left-color:#DCC8A9}
+.visa-path-grid article:nth-child(4n+3){background:var(--soft-green);border-color:var(--soft-green-border);border-left-color:#B7D6C1}
+.visa-path-grid article:nth-child(4n){background:var(--lavender-pink);border-color:var(--lavender-pink-border);border-left-color:#D8BBD8}
+.pro-documents .document-panel{background:var(--lavender-pink);border-color:var(--lavender-pink-border)}
+.pro-disclaimer{background:var(--warm-beige)}
+
+/* Contact page and shared details */
+.contact-detail{padding:13px 15px;margin-top:16px;background:var(--mist-blue);border-left:3px solid var(--mist-blue-border)}
+.contact-detail:nth-of-type(2){background:var(--warm-beige);border-left-color:var(--warm-beige-border)}
+.contact-detail:nth-of-type(3){background:var(--lavender-pink);border-left-color:var(--lavender-pink-border)}
+.enquiry-form{background:var(--mist-blue);border-color:var(--mist-blue-border)}
+.contact-expect{background:var(--warm-beige);border-top-color:var(--warm-beige-border)}
+
+/* FAQ open states and small interactive highlights */
+.faq-item[open]{background:var(--lavender-pink);border-bottom-color:var(--lavender-pink-border)}
+.faq-item[open] summary:after{color:#9875A4}
+.document-panel,.bank-doc-panel,.mortgage-checklist,.package-panel,.enquiry-form{border-radius:4px}
+@media(max-width:760px){
+ .pro-banner-note{padding:15px 16px}
+ .about-service-card,.jurisdiction-card,.banking-service-card,.pro-service-card{min-height:0}
+}
