@@ -784,3 +784,21 @@ section.inner-hero h1 em{
  letter-spacing:-.025em;
  display:inline-block;
 }
+
+
+/* Hero second line: subtle inset and angled gold serif treatment, matching the homepage reference. */
+section.hero h1 em,
+section.inner-hero h1 em{
+ display:inline-block!important;
+ margin-left:8px!important;
+ font-family:Georgia,'Times New Roman',serif!important;
+ font-style:italic!important;
+ font-weight:400!important;
+ color:var(--gold)!important;
+ letter-spacing:-.025em!important;
+ line-height:1.12!important;
+}
+@media(max-width:760px){
+ section.hero h1 em,
+ section.inner-hero h1 em{margin-left:5px!important}
+}
