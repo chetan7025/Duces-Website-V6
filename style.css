@@ -834,3 +834,17 @@ section.inner-hero h1 em{
 @media(max-width:760px){
   section.inner-hero h1 em{margin-left:5px!important}
 }
+
+
+/* Match the Home hero's .wrap container: 90% viewport width, capped at 1160px. */
+section.inner-hero>.wrap.inner-hero-content{
+  width:min(1160px,90%)!important;
+  max-width:1160px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+@media(max-width:760px){
+  section.inner-hero>.wrap.inner-hero-content{
+    width:90%!important;
+  }
+}
