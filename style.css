@@ -430,5 +430,3 @@
 @media(max-width:760px){.about-vision-mission{padding:62px 0 28px}.about-vm-grid{grid-template-columns:1fr}.about-vm-card{min-height:0;padding:29px 25px}.about-vm-foot{font-size:9px}}
 @media(max-width:420px){.about-vm-foot{flex-direction:column;gap:8px}}
 
-/* Keep the full Corporate Tax heading visible in its service image */
-.accounting-service-card:nth-child(3)>img{object-position:center 40%}
