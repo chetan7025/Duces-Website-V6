@@ -517,3 +517,16 @@
  .pro-page-heading{background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.86)),url('assets/duces-hero.jpg') center/cover no-repeat}
  .pro-page-heading-grid{min-height:0}
 }
+
+
+/* Shared inner-page hero system: consistent image crop, height and alignment across pages. */
+.inner-hero{
+ min-height:370px;
+ display:flex;
+ align-items:center;
+ background-position:center 47%;
+}
+.inner-hero-content{width:100%}
+@media(max-width:760px){
+ .inner-hero{min-height:340px;padding:62px 0 66px;background-position:center 47%}
+}
