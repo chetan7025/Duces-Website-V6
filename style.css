@@ -802,3 +802,23 @@ section.inner-hero h1 em{
  section.hero h1 em,
  section.inner-hero h1 em{margin-left:5px!important}
 }
+
+/* HOME HERO TYPOGRAPHY — shared gold second-line treatment on every page */
+.hero h1 em,
+.inner-hero h1 em{
+  display:inline-block;
+  margin-left:.16em;
+  font-family:Georgia,"Times New Roman",serif !important;
+  font-size:1em;
+  font-weight:400 !important;
+  font-style:italic !important;
+  line-height:1.1;
+  color:var(--gold) !important;
+  letter-spacing:-.025em;
+}
+@media(max-width:760px){
+  .hero h1 em,
+  .inner-hero h1 em{
+    margin-left:.14em;
+  }
+}
