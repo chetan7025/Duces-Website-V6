@@ -1580,3 +1580,20 @@ textarea:focus-visible,summary:focus-visible{
     margin:18px 0!important;
   }
 }
+
+
+/* Final visual direction: Banking pastel cards + Bright Royal Blue footer */
+.banking-service-card:nth-child(3n+1){background:#EAF2F8!important;border-color:#D8E5F0!important}
+.banking-service-card:nth-child(3n+2){background:#F7F1E8!important;border-color:#E9DDCA!important}
+.banking-service-card:nth-child(3n){background:#EAF4EE!important;border-color:#D7E8DC!important}
+.bank-type:nth-child(3n+1){background:#EAF2F8!important}
+.bank-type:nth-child(3n+2){background:#F7F1E8!important}
+.bank-type:nth-child(3n){background:#EAF4EE!important}
+.bank-doc-panel:first-child{background:#EAF2F8!important}
+.bank-doc-panel:last-child{background:#F7F1E8!important}
+.mortgage-checklist{background:#F5EDF5!important;border-color:#E8D9E8!important}
+
+.footer{background:#4285D4!important;color:#FFFFFF!important;border-top:1px solid #5B9BE8!important}
+.footer-brand p,.footer-bottom,.footer-main>div:not(:first-child) a,.footer h4,.footer-brand span{color:#FFFFFF!important}
+.footer-main{border-bottom:1px solid rgba(255,255,255,.28)!important}
+.footer-main>div:not(:first-child) a:hover,.footer a:hover{color:#D9AD55!important}
