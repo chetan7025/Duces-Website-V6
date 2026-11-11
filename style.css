@@ -650,3 +650,21 @@
  .pro-banner-note{padding:0 2px}
  .pro-banner-note p{font-size:13px;line-height:1.65}
 }
+
+
+/* Final image sizing: give the Corporate Tax artwork more room while keeping it uncropped. */
+.accounting-service-card:nth-child(3)>img{
+ height:190px;
+ max-height:190px;
+ width:100%;
+ object-fit:contain;
+ object-position:center;
+ background:#fff;
+}
+@media(max-width:600px){
+ .accounting-service-card:nth-child(3)>img{height:210px;max-height:210px}
+}
+
+/* The PRO banner stands on its own; no caption panel or pastel strip below it. */
+.pro-banner-note{display:none!important}
+.pro-banner-layout{row-gap:0}
