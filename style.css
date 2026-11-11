@@ -822,3 +822,15 @@ section.inner-hero h1 em{
     margin-left:.14em;
   }
 }
+
+
+/* Final alignment: inset the gold second line on inner-page heroes by the same visible amount as Home. */
+section.inner-hero h1 em{
+  display:inline-block!important;
+  margin-left:8px!important;
+  padding-left:0!important;
+  text-indent:0!important;
+}
+@media(max-width:760px){
+  section.inner-hero h1 em{margin-left:5px!important}
+}
