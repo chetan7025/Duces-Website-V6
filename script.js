@@ -41,7 +41,7 @@ enquiryForm?.addEventListener('submit', async (event) => {
       body: formData
     });
     const result = await response.json();
-    if (!response.ok || result.success !== 'true') {
+    if (!response.ok || (result.success !== true && result.success !== 'true')) {
       throw new Error(result.message || 'The form service could not confirm receipt.');
     }
     form.reset();
